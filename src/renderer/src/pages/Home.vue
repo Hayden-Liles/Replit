@@ -22,7 +22,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-12">
-                                    Terminal
+                                    <div ref="terminalElement"></div>
                                 </div>
                             </div>
                         </div>
@@ -39,8 +39,11 @@ import { ref, onMounted } from 'vue';
 import * as monaco from 'monaco-editor';
 import { Splitpanes, Pane } from 'splitpanes';
 import 'splitpanes/dist/splitpanes.css';
+import { Terminal } from 'xterm';
+import 'xterm/css/xterm.css';
 
 const editorElement = ref(null);
+const terminalElement = ref(null)
 
 onMounted(() => {
     if (editorElement.value) {
@@ -50,6 +53,12 @@ onMounted(() => {
             theme: 'vs-dark',
             automaticLayout: true
         });
+    }
+
+    if (terminalElement.value){
+        const term = new Terminal();
+        term.open(terminalElement.value)
+        term.write('hello from xterm')
     }
 });
 </script>
