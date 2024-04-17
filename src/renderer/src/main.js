@@ -1,3 +1,5 @@
+import 'splitpanes/dist/splitpanes.css';
+import 'xterm/css/xterm.css';
 import '@mdi/font/css/materialdesignicons.css'
 import './assets/main.scss'
 

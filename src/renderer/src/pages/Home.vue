@@ -38,10 +38,7 @@
 import { ref, onMounted } from 'vue';
 import * as monaco from 'monaco-editor';
 import { Splitpanes, Pane } from 'splitpanes';
-import 'splitpanes/dist/splitpanes.css';
 import { Terminal } from 'xterm';
-import 'xterm/css/xterm.css';
-
 const editorElement = ref(null);
 const terminalElement = ref(null)
 
