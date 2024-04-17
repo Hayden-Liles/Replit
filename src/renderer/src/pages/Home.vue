@@ -1,6 +1,6 @@
 <template>
-    <div class="app-container">
-        <splitpanes style="height: 100vh;">
+    <div class="h-100VH">
+        <splitpanes class="h-100VH">
 
             <pane size="20">
                 <div class="container-fluid m-0 p-0 test">
@@ -55,9 +55,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.app-container {
-    height: 100vh;
-}
 
 
 </style>
