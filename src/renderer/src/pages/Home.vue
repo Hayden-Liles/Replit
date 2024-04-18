@@ -56,16 +56,16 @@ function handleTerminalControls(term) {
     let TerminalCursorPrompt = '> '
     let startingHomePosition = TerminalCursorPrompt.length + 1
     let cursorPosition = startingHomePosition
-
+    
     let doNothingKeys = ['PageDown', 'PageUp', 'Tab',
-        'ArrowUp', 'ArrowDown',
-        'F1', 'F2', 'F3', 'F4', 'F5', 'F6',
-        'F7', 'F8', 'F9', 'F10', 'F11', 'F12']
-
+    'ArrowUp', 'ArrowDown',
+    'F1', 'F2', 'F3', 'F4', 'F5', 'F6',
+    'F7', 'F8', 'F9', 'F10', 'F11', 'F12']
+    
     let input = ''
-
+    
     term.write(TerminalCursorPrompt)
-
+    
     term.onKey(({ key, domEvent }) => {
         const keyCode = domEvent.code
         if (doNothingKeys.includes(keyCode)) {
@@ -134,6 +134,7 @@ onMounted(() => {
 
 </script>
 
+//FIXME - Make the terminal look better
 <style scoped>
 
 
