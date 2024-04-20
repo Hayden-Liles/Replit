@@ -129,6 +129,7 @@ function createTerminal() {
       env: process.env
     });
 
+
     terminal.on('data', (data) => {
       // Send data back to the renderer process
       BrowserWindow.getAllWindows().forEach((win) => {
@@ -141,8 +142,29 @@ function createTerminal() {
   return terminal;
 }
 
+let commandBuffer = '';
 
 ipcMain.on('terminal-to-backend', (event, data) => {
+  console.log("DATA RECIEVED :: ", data)
   const terminalInstance = createTerminal();
-  terminalInstance.write(data);
+
+  if (data == '\r' && commandBuffer.trim() == 'clear'){
+    terminalInstance.write(data);
+    terminalInstance.clear()
+    commandBuffer = ''
+    console.log('clearing')
+  } else if (data == '\r') {
+    console.log(commandBuffer.trim())
+    commandBuffer = ''
+    terminalInstance.write(data);
+  }
+  else{
+    commandBuffer += data
+    terminalInstance.write(data);
+  }
+});
+
+ipcMain.on('request-initial-data', () => {
+  const terminal = createTerminal();
+  terminal.clear()
 });
