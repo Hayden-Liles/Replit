@@ -135,6 +135,8 @@ function createTerminal() {
         win.webContents.send('terminal-from-backend', data);
       });
     });
+
+    
   }
   return terminal;
 }

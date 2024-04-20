@@ -22,7 +22,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-12">
-                                    <div ref="terminalElement"></div>
+                                    <div class="terminalc" ref="terminalElement"></div>
                                 </div>
                             </div>
                         </div>
@@ -39,13 +39,21 @@ import { ref, onMounted, watchEffect } from 'vue'
 import * as monaco from 'monaco-editor'
 import { Splitpanes, Pane } from 'splitpanes'
 import { Terminal } from '@xterm/xterm'
+import { FitAddon } from '@xterm/addon-fit'
 
 const terminalElement = ref(null)
 
 onMounted(() => {
     if (window.electron) {
-        const terminal = new Terminal();
+        const terminal = new Terminal({
+            cursorBlink: true,
+            scrollback: 10000,
+            tabStopWidth: 8
+        });
+        const fitAddon = new FitAddon()
+        terminal.loadAddon(fitAddon)
         terminal.open(terminalElement.value);
+        fitAddon.fit();
 
         terminal.onData(data => {
             console.log('sending', data)
@@ -56,12 +64,25 @@ onMounted(() => {
             console.log('recieving', data)
             terminal.write(data);
         });
+
+        window.addEventListener('resize', () => {
+            fitAddon.fit();
+        });
     }
 });
+
 </script>
 
 //FIXME - Make the terminal look better
 <style scoped>
+.xterm .xterm-viewport {
+    overflow-y: auto;
+    height: 100%;
+}
 
-
+.terminalc {
+    max-height: 100%;
+    background-color: black;
+    overflow: scroll;
+}
 </style>
