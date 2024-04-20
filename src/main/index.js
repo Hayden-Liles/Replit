@@ -2,7 +2,7 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import path, { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
-import { existsSync, readFileSync, writeFileSync } from 'fs'
+import { existsSync, readFileSync, writeFileSync, readdir } from 'fs'
 const os = require('os');
 const pty = require('node-pty');
 
@@ -167,4 +167,19 @@ ipcMain.on('terminal-to-backend', (event, data) => {
 ipcMain.on('request-initial-data', () => {
   const terminal = createTerminal();
   terminal.clear()
+});
+
+ipcMain.on('get-files-from-path', (event, dirPath) => {
+  readdir(dirPath, { withFileTypes: true }, (err, dirents) => {
+    if (err) {
+      console.error('Failed to read directory:', err);
+      event.reply('files-received', []); // Send empty array on error
+      return;
+    }
+    const files = dirents.map(dirent => ({
+      name: dirent.name,
+      isDirectory: dirent.isDirectory(),
+    }));
+    event.reply('files-received', files);
+  });
 });

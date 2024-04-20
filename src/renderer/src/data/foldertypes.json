@@ -1,0 +1,1007 @@
+[
+    {
+        "open": "folder-admin-open.svg",
+        "closed": "folder-admin.svg",
+        "folderName": "admin"
+    },
+    {
+        "open": "folder-android-open.svg",
+        "closed": "folder-android.svg",
+        "folderName": "android"
+    },
+    {
+        "open": "folder-angular-open.svg",
+        "closed": "folder-angular.svg",
+        "folderName": "angular"
+    },
+    {
+        "open": "folder-animation-open.svg",
+        "closed": "folder-animation.svg",
+        "folderName": "animation"
+    },
+    {
+        "open": "folder-ansible-open.svg",
+        "closed": "folder-ansible.svg",
+        "folderName": "ansible"
+    },
+    {
+        "open": "folder-api-open.svg",
+        "closed": "folder-api.svg",
+        "folderName": "api"
+    },
+    {
+        "open": "folder-apollo-open.svg",
+        "closed": "folder-apollo.svg",
+        "folderName": "apollo"
+    },
+    {
+        "open": "folder-app-open.svg",
+        "closed": "folder-app.svg",
+        "folderName": "app"
+    },
+    {
+        "open": "folder-archive-open.svg",
+        "closed": "folder-archive.svg",
+        "folderName": "archive"
+    },
+    {
+        "open": "folder-audio-open.svg",
+        "closed": "folder-audio.svg",
+        "folderName": "audio"
+    },
+    {
+        "open": "folder-aurelia-open.svg",
+        "closed": "folder-aurelia.svg",
+        "folderName": "aurelia"
+    },
+    {
+        "open": "folder-aws-open.svg",
+        "closed": "folder-aws.svg",
+        "folderName": "aws"
+    },
+    {
+        "open": "folder-azure-pipelines-open.svg",
+        "closed": "folder-azure-pipelines.svg",
+        "folderName": "azure-pipelines"
+    },
+    {
+        "open": "folder-base-open.svg",
+        "closed": "folder-base.svg",
+        "folderName": "base"
+    },
+    {
+        "open": "folder-batch-open.svg",
+        "closed": "folder-batch.svg",
+        "folderName": "batch"
+    },
+    {
+        "open": "folder-benchmark-open.svg",
+        "closed": "folder-benchmark.svg",
+        "folderName": "benchmark"
+    },
+    {
+        "open": "folder-bower-open.svg",
+        "closed": "folder-bower.svg",
+        "folderName": "bower"
+    },
+    {
+        "open": "folder-buildkite-open.svg",
+        "closed": "folder-buildkite.svg",
+        "folderName": "buildkite"
+    },
+    {
+        "open": "folder-cart-open.svg",
+        "closed": "folder-cart.svg",
+        "folderName": "cart"
+    },
+    {
+        "open": "folder-changesets-open.svg",
+        "closed": "folder-changesets.svg",
+        "folderName": "changesets"
+    },
+    {
+        "open": "folder-ci-open.svg",
+        "closed": "folder-ci.svg",
+        "folderName": "ci"
+    },
+    {
+        "open": "folder-circleci-open.svg",
+        "closed": "folder-circleci.svg",
+        "folderName": "circleci"
+    },
+    {
+        "open": "folder-class-open.svg",
+        "closed": "folder-class.svg",
+        "folderName": "class"
+    },
+    {
+        "open": "folder-client-open.svg",
+        "closed": "folder-client.svg",
+        "folderName": "client"
+    },
+    {
+        "open": "folder-cloudflare-open.svg",
+        "closed": "folder-cloudflare.svg",
+        "folderName": "cloudflare"
+    },
+    {
+        "open": "folder-cluster-open.svg",
+        "closed": "folder-cluster.svg",
+        "folderName": "cluster"
+    },
+    {
+        "open": "folder-cobol-open.svg",
+        "closed": "folder-cobol.svg",
+        "folderName": "cobol"
+    },
+    {
+        "open": "folder-command-open.svg",
+        "closed": "folder-command.svg",
+        "folderName": "command"
+    },
+    {
+        "open": "folder-components-open.svg",
+        "closed": "folder-components.svg",
+        "folderName": "components"
+    },
+    {
+        "open": "folder-config-open.svg",
+        "closed": "folder-config.svg",
+        "folderName": "config"
+    },
+    {
+        "open": "folder-connection-open.svg",
+        "closed": "folder-connection.svg",
+        "folderName": "connection"
+    },
+    {
+        "open": "folder-console-open.svg",
+        "closed": "folder-console.svg",
+        "folderName": "console"
+    },
+    {
+        "open": "folder-constant-open.svg",
+        "closed": "folder-constant.svg",
+        "folderName": "constant"
+    },
+    {
+        "open": "folder-container-open.svg",
+        "closed": "folder-container.svg",
+        "folderName": "container"
+    },
+    {
+        "open": "folder-content-open.svg",
+        "closed": "folder-content.svg",
+        "folderName": "content"
+    },
+    {
+        "open": "folder-context-open.svg",
+        "closed": "folder-context.svg",
+        "folderName": "context"
+    },
+    {
+        "open": "folder-contract-open.svg",
+        "closed": "folder-contract.svg",
+        "folderName": "contract"
+    },
+    {
+        "open": "folder-controller-open.svg",
+        "closed": "folder-controller.svg",
+        "folderName": "controller"
+    },
+    {
+        "open": "folder-core-open.svg",
+        "closed": "folder-core.svg",
+        "folderName": "core"
+    },
+    {
+        "open": "folder-coverage-open.svg",
+        "closed": "folder-coverage.svg",
+        "folderName": "coverage"
+    },
+    {
+        "open": "folder-css-open.svg",
+        "closed": "folder-css.svg",
+        "folderName": "css"
+    },
+    {
+        "open": "folder-custom-open.svg",
+        "closed": "folder-custom.svg",
+        "folderName": "custom"
+    },
+    {
+        "open": "folder-cypress-open.svg",
+        "closed": "folder-cypress.svg",
+        "folderName": "cypress"
+    },
+    {
+        "open": "folder-database-open.svg",
+        "closed": "folder-database.svg",
+        "folderName": "database"
+    },
+    {
+        "open": "folder-debug-open.svg",
+        "closed": "folder-debug.svg",
+        "folderName": "debug"
+    },
+    {
+        "open": "folder-decorators-open.svg",
+        "closed": "folder-decorators.svg",
+        "folderName": "decorators"
+    },
+    {
+        "open": "folder-delta-open.svg",
+        "closed": "folder-delta.svg",
+        "folderName": "delta"
+    },
+    {
+        "open": "folder-desktop-open.svg",
+        "closed": "folder-desktop.svg",
+        "folderName": "desktop"
+    },
+    {
+        "open": "folder-dist-open.svg",
+        "closed": "folder-dist.svg",
+        "folderName": "dist"
+    },
+    {
+        "open": "folder-docker-open.svg",
+        "closed": "folder-docker.svg",
+        "folderName": "docker"
+    },
+    {
+        "open": "folder-docs-open.svg",
+        "closed": "folder-docs.svg",
+        "folderName": "docs"
+    },
+    {
+        "open": "folder-download-open.svg",
+        "closed": "folder-download.svg",
+        "folderName": "download"
+    },
+    {
+        "open": "folder-dump-open.svg",
+        "closed": "folder-dump.svg",
+        "folderName": "dump"
+    },
+    {
+        "open": "folder-enum-open.svg",
+        "closed": "folder-enum.svg",
+        "folderName": "enum"
+    },
+    {
+        "open": "folder-environment-open.svg",
+        "closed": "folder-environment.svg",
+        "folderName": "environment"
+    },
+    {
+        "open": "folder-error-open.svg",
+        "closed": "folder-error.svg",
+        "folderName": "error"
+    },
+    {
+        "open": "folder-event-open.svg",
+        "closed": "folder-event.svg",
+        "folderName": "event"
+    },
+    {
+        "open": "folder-examples-open.svg",
+        "closed": "folder-examples.svg",
+        "folderName": "examples"
+    },
+    {
+        "open": "folder-expo-open.svg",
+        "closed": "folder-expo.svg",
+        "folderName": "expo"
+    },
+    {
+        "open": "folder-export-open.svg",
+        "closed": "folder-export.svg",
+        "folderName": "export"
+    },
+    {
+        "open": "folder-fastlane-open.svg",
+        "closed": "folder-fastlane.svg",
+        "folderName": "fastlane"
+    },
+    {
+        "open": "folder-firebase-open.svg",
+        "closed": "folder-firebase.svg",
+        "folderName": "firebase"
+    },
+    {
+        "open": "folder-flow-open.svg",
+        "closed": "folder-flow.svg",
+        "folderName": "flow"
+    },
+    {
+        "open": "folder-font-open.svg",
+        "closed": "folder-font.svg",
+        "folderName": "font"
+    },
+    {
+        "open": "folder-functions-open.svg",
+        "closed": "folder-functions.svg",
+        "folderName": "functions"
+    },
+    {
+        "open": "folder-gamemaker-open.svg",
+        "closed": "folder-gamemaker.svg",
+        "folderName": "gamemaker"
+    },
+    {
+        "open": "folder-generator-open.svg",
+        "closed": "folder-generator.svg",
+        "folderName": "generator"
+    },
+    {
+        "open": "folder-git-open.svg",
+        "closed": "folder-git.svg",
+        "folderName": "git"
+    },
+    {
+        "open": "folder-github-open.svg",
+        "closed": "folder-github.svg",
+        "folderName": "github"
+    },
+    {
+        "open": "folder-gitlab-open.svg",
+        "closed": "folder-gitlab.svg",
+        "folderName": "gitlab"
+    },
+    {
+        "open": "folder-global-open.svg",
+        "closed": "folder-global.svg",
+        "folderName": "global"
+    },
+    {
+        "open": "folder-godot-open.svg",
+        "closed": "folder-godot.svg",
+        "folderName": "godot"
+    },
+    {
+        "open": "folder-gradle-open.svg",
+        "closed": "folder-gradle.svg",
+        "folderName": "gradle"
+    },
+    {
+        "open": "folder-graphql-open.svg",
+        "closed": "folder-graphql.svg",
+        "folderName": "graphql"
+    },
+    {
+        "open": "folder-guard-open.svg",
+        "closed": "folder-guard.svg",
+        "folderName": "guard"
+    },
+    {
+        "open": "folder-gulp-open.svg",
+        "closed": "folder-gulp.svg",
+        "folderName": "gulp"
+    },
+    {
+        "open": "folder-helper-open.svg",
+        "closed": "folder-helper.svg",
+        "folderName": "helper"
+    },
+    {
+        "open": "folder-home-open.svg",
+        "closed": "folder-home.svg",
+        "folderName": "home"
+    },
+    {
+        "open": "folder-hook-open.svg",
+        "closed": "folder-hook.svg",
+        "folderName": "hook"
+    },
+    {
+        "open": "folder-husky-open.svg",
+        "closed": "folder-husky.svg",
+        "folderName": "husky"
+    },
+    {
+        "open": "folder-i18n-open.svg",
+        "closed": "folder-i18n.svg",
+        "folderName": "i18n"
+    },
+    {
+        "open": "folder-images-open.svg",
+        "closed": "folder-images.svg",
+        "folderName": "images"
+    },
+    {
+        "open": "folder-import-open.svg",
+        "closed": "folder-import.svg",
+        "folderName": "import"
+    },
+    {
+        "open": "folder-include-open.svg",
+        "closed": "folder-include.svg",
+        "folderName": "include"
+    },
+    {
+        "open": "folder-intellij-open.svg",
+        "closed": "folder-intellij.svg",
+        "folderName": "intellij"
+    },
+    {
+        "open": "folder-interface-open.svg",
+        "closed": "folder-interface.svg",
+        "folderName": "interface"
+    },
+    {
+        "open": "folder-ios-open.svg",
+        "closed": "folder-ios.svg",
+        "folderName": "ios"
+    },
+    {
+        "open": "folder-java-open.svg",
+        "closed": "folder-java.svg",
+        "folderName": "java"
+    },
+    {
+        "open": "folder-javascript-open.svg",
+        "closed": "folder-javascript.svg",
+        "folderName": "javascript"
+    },
+    {
+        "open": "folder-jinja-open.svg",
+        "closed": "folder-jinja.svg",
+        "folderName": "jinja"
+    },
+    {
+        "open": "folder-job-open.svg",
+        "closed": "folder-job.svg",
+        "folderName": "job"
+    },
+    {
+        "open": "folder-json-open.svg",
+        "closed": "folder-json.svg",
+        "folderName": "json"
+    },
+    {
+        "open": "folder-keys-open.svg",
+        "closed": "folder-keys.svg",
+        "folderName": "keys"
+    },
+    {
+        "open": "folder-kubernetes-open.svg",
+        "closed": "folder-kubernetes.svg",
+        "folderName": "kubernetes"
+    },
+    {
+        "open": "folder-layout-open.svg",
+        "closed": "folder-layout.svg",
+        "folderName": "layout"
+    },
+    {
+        "open": "folder-less-open.svg",
+        "closed": "folder-less.svg",
+        "folderName": "less"
+    },
+    {
+        "open": "folder-lib-open.svg",
+        "closed": "folder-lib.svg",
+        "folderName": "lib"
+    },
+    {
+        "open": "folder-linux-open.svg",
+        "closed": "folder-linux.svg",
+        "folderName": "linux"
+    },
+    {
+        "open": "folder-log-open.svg",
+        "closed": "folder-log.svg",
+        "folderName": "log"
+    },
+    {
+        "open": "folder-lottie-open.svg",
+        "closed": "folder-lottie.svg",
+        "folderName": "lottie"
+    },
+    {
+        "open": "folder-lua-open.svg",
+        "closed": "folder-lua.svg",
+        "folderName": "lua"
+    },
+    {
+        "open": "folder-macos-open.svg",
+        "closed": "folder-macos.svg",
+        "folderName": "macos"
+    },
+    {
+        "open": "folder-mail-open.svg",
+        "closed": "folder-mail.svg",
+        "folderName": "mail"
+    },
+    {
+        "open": "folder-mappings-open.svg",
+        "closed": "folder-mappings.svg",
+        "folderName": "mappings"
+    },
+    {
+        "open": "folder-markdown-open.svg",
+        "closed": "folder-markdown.svg",
+        "folderName": "markdown"
+    },
+    {
+        "open": "folder-mercurial-open.svg",
+        "closed": "folder-mercurial.svg",
+        "folderName": "mercurial"
+    },
+    {
+        "open": "folder-messages-open.svg",
+        "closed": "folder-messages.svg",
+        "folderName": "messages"
+    },
+    {
+        "open": "folder-meta-open.svg",
+        "closed": "folder-meta.svg",
+        "folderName": "meta"
+    },
+    {
+        "open": "folder-middleware-open.svg",
+        "closed": "folder-middleware.svg",
+        "folderName": "middleware"
+    },
+    {
+        "open": "folder-mjml-open.svg",
+        "closed": "folder-mjml.svg",
+        "folderName": "mjml"
+    },
+    {
+        "open": "folder-mobile-open.svg",
+        "closed": "folder-mobile.svg",
+        "folderName": "mobile"
+    },
+    {
+        "open": "folder-mock-open.svg",
+        "closed": "folder-mock.svg",
+        "folderName": "mock"
+    },
+    {
+        "open": "folder-mojo-open.svg",
+        "closed": "folder-mojo.svg",
+        "folderName": "mojo"
+    },
+    {
+        "open": "folder-moon-open.svg",
+        "closed": "folder-moon.svg",
+        "folderName": "moon"
+    },
+    {
+        "open": "folder-netlify-open.svg",
+        "closed": "folder-netlify.svg",
+        "folderName": "netlify"
+    },
+    {
+        "open": "folder-next-open.svg",
+        "closed": "folder-next.svg",
+        "folderName": "next"
+    },
+    {
+        "open": "folder-ngrx-actions-open.svg",
+        "closed": "folder-ngrx-actions.svg",
+        "folderName": "ngrx-actions"
+    },
+    {
+        "open": "folder-ngrx-effects-open.svg",
+        "closed": "folder-ngrx-effects.svg",
+        "folderName": "ngrx-effects"
+    },
+    {
+        "open": "folder-ngrx-entities-open.svg",
+        "closed": "folder-ngrx-entities.svg",
+        "folderName": "ngrx-entities"
+    },
+    {
+        "open": "folder-ngrx-reducer-open.svg",
+        "closed": "folder-ngrx-reducer.svg",
+        "folderName": "ngrx-reducer"
+    },
+    {
+        "open": "folder-ngrx-selectors-open.svg",
+        "closed": "folder-ngrx-selectors.svg",
+        "folderName": "ngrx-selectors"
+    },
+    {
+        "open": "folder-ngrx-state-open.svg",
+        "closed": "folder-ngrx-state.svg",
+        "folderName": "ngrx-state"
+    },
+    {
+        "open": "folder-ngrx-store-open.svg",
+        "closed": "folder-ngrx-store.svg",
+        "folderName": "ngrx-store"
+    },
+    {
+        "open": "folder-node-open.svg",
+        "closed": "folder-node.svg",
+        "folderName": "node"
+    },
+    {
+        "open": "folder-nuxt-open.svg",
+        "closed": "folder-nuxt.svg",
+        "folderName": "nuxt"
+    },
+    {
+        "open": "folder-other-open.svg",
+        "closed": "folder-other.svg",
+        "folderName": "other"
+    },
+    {
+        "open": "folder-packages-open.svg",
+        "closed": "folder-packages.svg",
+        "folderName": "packages"
+    },
+    {
+        "open": "folder-pdf-open.svg",
+        "closed": "folder-pdf.svg",
+        "folderName": "pdf"
+    },
+    {
+        "open": "folder-pdm-open.svg",
+        "closed": "folder-pdm.svg",
+        "folderName": "pdm"
+    },
+    {
+        "open": "folder-php-open.svg",
+        "closed": "folder-php.svg",
+        "folderName": "php"
+    },
+    {
+        "open": "folder-phpmailer-open.svg",
+        "closed": "folder-phpmailer.svg",
+        "folderName": "phpmailer"
+    },
+    {
+        "open": "folder-pipe-open.svg",
+        "closed": "folder-pipe.svg",
+        "folderName": "pipe"
+    },
+    {
+        "open": "folder-plastic-open.svg",
+        "closed": "folder-plastic.svg",
+        "folderName": "plastic"
+    },
+    {
+        "open": "folder-plugin-open.svg",
+        "closed": "folder-plugin.svg",
+        "folderName": "plugin"
+    },
+    {
+        "open": "folder-prisma-open.svg",
+        "closed": "folder-prisma.svg",
+        "folderName": "prisma"
+    },
+    {
+        "open": "folder-private-open.svg",
+        "closed": "folder-private.svg",
+        "folderName": "private"
+    },
+    {
+        "open": "folder-project-open.svg",
+        "closed": "folder-project.svg",
+        "folderName": "project"
+    },
+    {
+        "open": "folder-proto-open.svg",
+        "closed": "folder-proto.svg",
+        "folderName": "proto"
+    },
+    {
+        "open": "folder-public-open.svg",
+        "closed": "folder-public.svg",
+        "folderName": "public"
+    },
+    {
+        "open": "folder-python-open.svg",
+        "closed": "folder-python.svg",
+        "folderName": "python"
+    },
+    {
+        "open": "folder-quasar-open.svg",
+        "closed": "folder-quasar.svg",
+        "folderName": "quasar"
+    },
+    {
+        "open": "folder-queue-open.svg",
+        "closed": "folder-queue.svg",
+        "folderName": "queue"
+    },
+    {
+        "open": "folder-react-components-open.svg",
+        "closed": "folder-react-components.svg",
+        "folderName": "react-components"
+    },
+    {
+        "open": "folder-redux-actions-open.svg",
+        "closed": "folder-redux-actions.svg",
+        "folderName": "redux-actions"
+    },
+    {
+        "open": "folder-redux-reducer-open.svg",
+        "closed": "folder-redux-reducer.svg",
+        "folderName": "redux-reducer"
+    },
+    {
+        "open": "folder-redux-selector-open.svg",
+        "closed": "folder-redux-selector.svg",
+        "folderName": "redux-selector"
+    },
+    {
+        "open": "folder-redux-store-open.svg",
+        "closed": "folder-redux-store.svg",
+        "folderName": "redux-store"
+    },
+    {
+        "open": "folder-resolver-open.svg",
+        "closed": "folder-resolver.svg",
+        "folderName": "resolver"
+    },
+    {
+        "open": "folder-resource-open.svg",
+        "closed": "folder-resource.svg",
+        "folderName": "resource"
+    },
+    {
+        "open": "folder-review-open.svg",
+        "closed": "folder-review.svg",
+        "folderName": "review"
+    },
+    {
+        "open": "folder-robot-open.svg",
+        "closed": "folder-robot.svg",
+        "folderName": "robot"
+    },
+    {
+        "open": "folder-routes-open.svg",
+        "closed": "folder-routes.svg",
+        "folderName": "routes"
+    },
+    {
+        "open": "folder-rules-open.svg",
+        "closed": "folder-rules.svg",
+        "folderName": "rules"
+    },
+    {
+        "open": "folder-sass-open.svg",
+        "closed": "folder-sass.svg",
+        "folderName": "sass"
+    },
+    {
+        "open": "folder-scala-open.svg",
+        "closed": "folder-scala.svg",
+        "folderName": "scala"
+    },
+    {
+        "open": "folder-scripts-open.svg",
+        "closed": "folder-scripts.svg",
+        "folderName": "scripts"
+    },
+    {
+        "open": "folder-secure-open.svg",
+        "closed": "folder-secure.svg",
+        "folderName": "secure"
+    },
+    {
+        "open": "folder-server-open.svg",
+        "closed": "folder-server.svg",
+        "folderName": "server"
+    },
+    {
+        "open": "folder-serverless-open.svg",
+        "closed": "folder-serverless.svg",
+        "folderName": "serverless"
+    },
+    {
+        "open": "folder-shader-open.svg",
+        "closed": "folder-shader.svg",
+        "folderName": "shader"
+    },
+    {
+        "open": "folder-shared-open.svg",
+        "closed": "folder-shared.svg",
+        "folderName": "shared"
+    },
+    {
+        "open": "folder-src-open.svg",
+        "closed": "folder-src.svg",
+        "folderName": "src"
+    },
+    {
+        "open": "folder-stack-open.svg",
+        "closed": "folder-stack.svg",
+        "folderName": "stack"
+    },
+    {
+        "open": "folder-stencil-open.svg",
+        "closed": "folder-stencil.svg",
+        "folderName": "stencil"
+    },
+    {
+        "open": "folder-storybook-open.svg",
+        "closed": "folder-storybook.svg",
+        "folderName": "storybook"
+    },
+    {
+        "open": "folder-stylus-open.svg",
+        "closed": "folder-stylus.svg",
+        "folderName": "stylus"
+    },
+    {
+        "open": "folder-sublime-open.svg",
+        "closed": "folder-sublime.svg",
+        "folderName": "sublime"
+    },
+    {
+        "open": "folder-supabase-open.svg",
+        "closed": "folder-supabase.svg",
+        "folderName": "supabase"
+    },
+    {
+        "open": "folder-svelte-open.svg",
+        "closed": "folder-svelte.svg",
+        "folderName": "svelte"
+    },
+    {
+        "open": "folder-svg-open.svg",
+        "closed": "folder-svg.svg",
+        "folderName": "svg"
+    },
+    {
+        "open": "folder-syntax-open.svg",
+        "closed": "folder-syntax.svg",
+        "folderName": "syntax"
+    },
+    {
+        "open": "folder-target-open.svg",
+        "closed": "folder-target.svg",
+        "folderName": "target"
+    },
+    {
+        "open": "folder-taskfile-open.svg",
+        "closed": "folder-taskfile.svg",
+        "folderName": "taskfile"
+    },
+    {
+        "open": "folder-tasks-open.svg",
+        "closed": "folder-tasks.svg",
+        "folderName": "tasks"
+    },
+    {
+        "open": "folder-television-open.svg",
+        "closed": "folder-television.svg",
+        "folderName": "television"
+    },
+    {
+        "open": "folder-temp-open.svg",
+        "closed": "folder-temp.svg",
+        "folderName": "temp"
+    },
+    {
+        "open": "folder-template-open.svg",
+        "closed": "folder-template.svg",
+        "folderName": "template"
+    },
+    {
+        "open": "folder-terraform-open.svg",
+        "closed": "folder-terraform.svg",
+        "folderName": "terraform"
+    },
+    {
+        "open": "folder-test-open.svg",
+        "closed": "folder-test.svg",
+        "folderName": "test"
+    },
+    {
+        "open": "folder-theme-open.svg",
+        "closed": "folder-theme.svg",
+        "folderName": "theme"
+    },
+    {
+        "open": "folder-tools-open.svg",
+        "closed": "folder-tools.svg",
+        "folderName": "tools"
+    },
+    {
+        "open": "folder-typescript-open.svg",
+        "closed": "folder-typescript.svg",
+        "folderName": "typescript"
+    },
+    {
+        "open": "folder-unity-open.svg",
+        "closed": "folder-unity.svg",
+        "folderName": "unity"
+    },
+    {
+        "open": "folder-update-open.svg",
+        "closed": "folder-update.svg",
+        "folderName": "update"
+    },
+    {
+        "open": "folder-upload-open.svg",
+        "closed": "folder-upload.svg",
+        "folderName": "upload"
+    },
+    {
+        "open": "folder-utils-open.svg",
+        "closed": "folder-utils.svg",
+        "folderName": "utils"
+    },
+    {
+        "open": "folder-vercel-open.svg",
+        "closed": "folder-vercel.svg",
+        "folderName": "vercel"
+    },
+    {
+        "open": "folder-verdaccio-open.svg",
+        "closed": "folder-verdaccio.svg",
+        "folderName": "verdaccio"
+    },
+    {
+        "open": "folder-video-open.svg",
+        "closed": "folder-video.svg",
+        "folderName": "video"
+    },
+    {
+        "open": "folder-views-open.svg",
+        "closed": "folder-views.svg",
+        "folderName": "views"
+    },
+    {
+        "open": "folder-vm-open.svg",
+        "closed": "folder-vm.svg",
+        "folderName": "vm"
+    },
+    {
+        "open": "folder-vscode-open.svg",
+        "closed": "folder-vscode.svg",
+        "folderName": "vscode"
+    },
+    {
+        "open": "folder-vue-directives-open.svg",
+        "closed": "folder-vue-directives.svg",
+        "folderName": "vue-directives"
+    },
+    {
+        "open": "folder-vue-open.svg",
+        "closed": "folder-vue.svg",
+        "folderName": "vue"
+    },
+    {
+        "open": "folder-vuepress-open.svg",
+        "closed": "folder-vuepress.svg",
+        "folderName": "vuepress"
+    },
+    {
+        "open": "folder-vuex-store-open.svg",
+        "closed": "folder-vuex-store.svg",
+        "folderName": "vuex-store"
+    },
+    {
+        "open": "folder-wakatime-open.svg",
+        "closed": "folder-wakatime.svg",
+        "folderName": "wakatime"
+    },
+    {
+        "open": "folder-webpack-open.svg",
+        "closed": "folder-webpack.svg",
+        "folderName": "webpack"
+    },
+    {
+        "open": "folder-windows-open.svg",
+        "closed": "folder-windows.svg",
+        "folderName": "windows"
+    },
+    {
+        "open": "folder-wordpress-open.svg",
+        "closed": "folder-wordpress.svg",
+        "folderName": "wordpress"
+    },
+    {
+        "open": "folder-yarn-open.svg",
+        "closed": "folder-yarn.svg",
+        "folderName": "yarn"
+    }
+]

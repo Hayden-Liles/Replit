@@ -1,0 +1,1931 @@
+[
+    {
+        "extension": ".svg",
+        "fileName": "3d.svg"
+    },
+    {
+        "extension": ".abap",
+        "fileName": "abap.svg"
+    },
+    {
+        "extension": ".abc",
+        "fileName": "abc.svg"
+    },
+    {
+        "extension": ".as",
+        "fileName": "actionscript.svg"
+    },
+    {
+        "extension": ".ada",
+        "fileName": "ada.svg"
+    },
+    {
+        "extension": ".arc",
+        "fileName": "adonis.svg"
+    },
+    {
+        "extension": ".ch",
+        "fileName": "advpl_include.svg"
+    },
+    {
+        "extension": ".prw",
+        "fileName": "advpl_prw.svg"
+    },
+    {
+        "extension": ".ptm",
+        "fileName": "advpl_ptm.svg"
+    },
+    {
+        "extension": ".tlpp",
+        "fileName": "advpl_tlpp.svg"
+    },
+    {
+        "extension": ".apk",
+        "fileName": "android.svg"
+    },
+    {
+        "extension": ".component.ts",
+        "fileName": "angular-component.svg"
+    },
+    {
+        "extension": ".directive.ts",
+        "fileName": "angular-directive.svg"
+    },
+    {
+        "extension": ".guard.ts",
+        "fileName": "angular-guard.svg"
+    },
+    {
+        "extension": ".pipe.ts",
+        "fileName": "angular-pipe.svg"
+    },
+    {
+        "extension": ".resolver.ts",
+        "fileName": "angular-resolver.svg"
+    },
+    {
+        "extension": ".service.ts",
+        "fileName": "angular-service.svg"
+    },
+    {
+        "extension": ".ng",
+        "fileName": "angular.svg"
+    },
+    {
+        "extension": ".g4",
+        "fileName": "antlr.svg"
+    },
+    {
+        "extension": ".apib",
+        "fileName": "apiblueprint.svg"
+    },
+    {
+        "extension": ".graphql",
+        "fileName": "apollo.svg"
+    },
+    {
+        "extension": ".applescript",
+        "fileName": "applescript.svg"
+    },
+    {
+        "extension": ".gs",
+        "fileName": "apps-script.svg"
+    },
+    {
+        "extension": ".yml",
+        "fileName": "appveyor.svg"
+    },
+    {
+        "extension": ".ino",
+        "fileName": "arduino.svg"
+    },
+    {
+        "extension": ".adoc",
+        "fileName": "asciidoc.svg"
+    },
+    {
+        "extension": ".asm",
+        "fileName": "assembly.svg"
+    },
+    {
+        "extension": ".astro",
+        "fileName": "astro.svg"
+    },
+    {
+        "extension": ".conf",
+        "fileName": "astyle.svg"
+    },
+    {
+        "extension": ".mp3",
+        "fileName": "audio.svg"
+    },
+    {
+        "extension": ".au",
+        "fileName": "aurelia.svg"
+    },
+    {
+        "extension": ".ahk",
+        "fileName": "autohotkey.svg"
+    },
+    {
+        "extension": ".au3",
+        "fileName": "autoit.svg"
+    },
+    {
+        "extension": ".azure-pipelines.yml",
+        "fileName": "azure-pipelines.svg"
+    },
+    {
+        "extension": ".azure",
+        "fileName": "azure.svg"
+    },
+    {
+        "extension": ".babelrc",
+        "fileName": "babel.svg"
+    },
+    {
+        "extension": ".bal",
+        "fileName": "ballerina.svg"
+    },
+    {
+        "extension": ".bzl",
+        "fileName": "bazel.svg"
+    },
+    {
+        "extension": ".bicep",
+        "fileName": "bicep.svg"
+    },
+    {
+        "extension": ".biome",
+        "fileName": "biome.svg"
+    },
+    {
+        "extension": ".bitbucket-pipelines.yml",
+        "fileName": "bitbucket.svg"
+    },
+    {
+        "extension": ".bithoundrc",
+        "fileName": "bithound.svg"
+    },
+    {
+        "extension": ".blink",
+        "fileName": "blink.svg"
+    },
+    {
+        "extension": ".blink",
+        "fileName": "blink_light.svg"
+    },
+    {
+        "extension": ".blitz",
+        "fileName": "blitz.svg"
+    },
+    {
+        "extension": ".bf",
+        "fileName": "brainfuck.svg"
+    },
+    {
+        "extension": ".browserslistrc",
+        "fileName": "browserlist.svg"
+    },
+    {
+        "extension": ".browserslistrc",
+        "fileName": "browserlist_light.svg"
+    },
+    {
+        "extension": ".buckconfig",
+        "fileName": "buck.svg"
+    },
+    {
+        "extension": ".ml",
+        "fileName": "bucklescript.svg"
+    },
+    {
+        "extension": ".buildkite.yml",
+        "fileName": "buildkite.svg"
+    },
+    {
+        "extension": ".bun",
+        "fileName": "bun.svg"
+    },
+    {
+        "extension": ".bun",
+        "fileName": "bun_light.svg"
+    },
+    {
+        "extension": ".c",
+        "fileName": "c.svg"
+    },
+    {
+        "extension": ".cabal",
+        "fileName": "cabal.svg"
+    },
+    {
+        "extension": ".caddyfile",
+        "fileName": "caddy.svg"
+    },
+    {
+        "extension": ".cdc",
+        "fileName": "cadence.svg"
+    },
+    {
+        "extension": ".cake",
+        "fileName": "cake.svg"
+    },
+    {
+        "extension": ".capacitor.config.json",
+        "fileName": "capacitor.svg"
+    },
+    {
+        "extension": ".capnp",
+        "fileName": "capnp.svg"
+    },
+    {
+        "extension": ".cert",
+        "fileName": "certificate.svg"
+    },
+    {
+        "extension": ".changelog.md",
+        "fileName": "changelog.svg"
+    },
+    {
+        "extension": ".pgn",
+        "fileName": "chess.svg"
+    },
+    {
+        "extension": ".pgn",
+        "fileName": "chess_light.svg"
+    },
+    {
+        "extension": ".clj",
+        "fileName": "clojure.svg"
+    },
+    {
+        "extension": ".cmake",
+        "fileName": "cmake.svg"
+    },
+    {
+        "extension": ".coafile",
+        "fileName": "coala.svg"
+    },
+    {
+        "extension": ".cob",
+        "fileName": "cobol.svg"
+    },
+    {
+        "extension": ".coco",
+        "fileName": "coconut.svg"
+    },
+    {
+        "extension": ".codeclimate.yml",
+        "fileName": "code-climate.svg"
+    },
+    {
+        "extension": ".codeclimate.yml",
+        "fileName": "code-climate_light.svg"
+    },
+    {
+        "extension": ".codecov.yml",
+        "fileName": "codecov.svg"
+    },
+    {
+        "extension": ".codeowners",
+        "fileName": "codeowners.svg"
+    },
+    {
+        "extension": ".coffee",
+        "fileName": "coffee.svg"
+    },
+    {
+        "extension": ".cfc",
+        "fileName": "coldfusion.svg"
+    },
+    {
+        "extension": ".sh",
+        "fileName": "command.svg"
+    },
+    {
+        "extension": ".commitlintrc",
+        "fileName": "commitlint.svg"
+    },
+    {
+        "extension": ".concourse.yml",
+        "fileName": "concourse.svg"
+    },
+    {
+        "extension": ".code-of-conduct.md",
+        "fileName": "conduct.svg"
+    },
+    {
+        "extension": ".cpp",
+        "fileName": "cpp.svg"
+    },
+    {
+        "extension": ".craco.config.js",
+        "fileName": "craco.svg"
+    },
+    {
+        "extension": ".credits.txt",
+        "fileName": "credits.svg"
+    },
+    {
+        "extension": ".cr",
+        "fileName": "crystal.svg"
+    },
+    {
+        "extension": ".cr",
+        "fileName": "crystal_light.svg"
+    },
+    {
+        "extension": ".cs",
+        "fileName": "csharp.svg"
+    },
+    {
+        "extension": ".css.map",
+        "fileName": "css-map.svg"
+    },
+    {
+        "extension": ".css",
+        "fileName": "css.svg"
+    },
+    {
+        "extension": ".feature",
+        "fileName": "cucumber.svg"
+    },
+    {
+        "extension": ".cu",
+        "fileName": "cuda.svg"
+    },
+    {
+        "extension": ".cypress.json",
+        "fileName": "cypress.svg"
+    },
+    {
+        "extension": ".d",
+        "fileName": "d.svg"
+    },
+    {
+        "extension": ".dart",
+        "fileName": "dart.svg"
+    },
+    {
+        "extension": ".g.dart",
+        "fileName": "dart_generated.svg"
+    },
+    {
+        "extension": ".db",
+        "fileName": "database.svg"
+    },
+    {
+        "extension": ".dsc",
+        "fileName": "denizenscript.svg"
+    },
+    {
+        "extension": ".deno.json",
+        "fileName": "deno.svg"
+    },
+    {
+        "extension": ".deno.json",
+        "fileName": "deno_light.svg"
+    },
+    {
+        "extension": ".dependabot.yml",
+        "fileName": "dependabot.svg"
+    },
+    {
+        "extension": ".dhall",
+        "fileName": "dhall.svg"
+    },
+    {
+        "extension": ".diff",
+        "fileName": "diff.svg"
+    },
+    {
+        "extension": ".php",
+        "fileName": "dinophp.svg"
+    },
+    {
+        "extension": ".iso",
+        "fileName": "disc.svg"
+    },
+    {
+        "extension": ".django",
+        "fileName": "django.svg"
+    },
+    {
+        "extension": ".dll",
+        "fileName": "dll.svg"
+    },
+    {
+        "extension": ".dockerfile",
+        "fileName": "docker.svg"
+    },
+    {
+        "extension": ".doc",
+        "fileName": "document.svg"
+    },
+    {
+        "extension": ".js",
+        "fileName": "dotjs.svg"
+    },
+    {
+        "extension": ".drawio",
+        "fileName": "drawio.svg"
+    },
+    {
+        "extension": ".drone.yml",
+        "fileName": "drone.svg"
+    },
+    {
+        "extension": ".drone.yml",
+        "fileName": "drone_light.svg"
+    },
+    {
+        "extension": ".dune",
+        "fileName": "dune.svg"
+    },
+    {
+        "extension": ".editorconfig",
+        "fileName": "editorconfig.svg"
+    },
+    {
+        "extension": ".ejs",
+        "fileName": "ejs.svg"
+    },
+    {
+        "extension": ".ex",
+        "fileName": "elixir.svg"
+    },
+    {
+        "extension": ".elm",
+        "fileName": "elm.svg"
+    },
+    {
+        "extension": ".eml",
+        "fileName": "email.svg"
+    },
+    {
+        "extension": ".ember-cli",
+        "fileName": "ember.svg"
+    },
+    {
+        "extension": ".erl",
+        "fileName": "erlang.svg"
+    },
+    {
+        "extension": ".esbuild",
+        "fileName": "esbuild.svg"
+    },
+    {
+        "extension": ".eslintrc",
+        "fileName": "eslint.svg"
+    },
+    {
+        "extension": ".exe",
+        "fileName": "exe.svg"
+    },
+    {
+        "extension": ".fastfile",
+        "fileName": "fastlane.svg"
+    },
+    {
+        "extension": ".ico",
+        "fileName": "favicon.svg"
+    },
+    {
+        "extension": ".fig",
+        "fileName": "figma.svg"
+    },
+    {
+        "extension": ".firebaserc",
+        "fileName": "firebase.svg"
+    },
+    {
+        "extension": ".swf",
+        "fileName": "flash.svg"
+    },
+    {
+        "extension": ".flowconfig",
+        "fileName": "flow.svg"
+    },
+    {
+        "extension": ".otf",
+        "fileName": "font.svg"
+    },
+    {
+        "extension": ".fth",
+        "fileName": "forth.svg"
+    },
+    {
+        "extension": ".f",
+        "fileName": "fortran.svg"
+    },
+    {
+        "extension": ".prg",
+        "fileName": "foxpro.svg"
+    },
+    {
+        "extension": ".fs",
+        "fileName": "fsharp.svg"
+    },
+    {
+        "extension": ".fuse",
+        "fileName": "fusebox.svg"
+    },
+    {
+        "extension": ".gml",
+        "fileName": "gamemaker.svg"
+    },
+    {
+        "extension": ".gatsby-config.js",
+        "fileName": "gatsby.svg"
+    },
+    {
+        "extension": ".gcp",
+        "fileName": "gcp.svg"
+    },
+    {
+        "extension": ".gemfile",
+        "fileName": "gemfile.svg"
+    },
+    {
+        "extension": ".gmi",
+        "fileName": "gemini.svg"
+    },
+    {
+        "extension": ".gitattributes",
+        "fileName": "git.svg"
+    },
+    {
+        "extension": ".gitlab-ci.yml",
+        "fileName": "gitlab.svg"
+    },
+    {
+        "extension": ".gitpod.yml",
+        "fileName": "gitpod.svg"
+    },
+    {
+        "extension": ".gleam",
+        "fileName": "gleam.svg"
+    },
+    {
+        "extension": ".go.mod",
+        "fileName": "go-mod.svg"
+    },
+    {
+        "extension": ".go",
+        "fileName": "go.svg"
+    },
+    {
+        "extension": ".go",
+        "fileName": "go_gopher.svg"
+    },
+    {
+        "extension": ".tres",
+        "fileName": "godot-assets.svg"
+    },
+    {
+        "extension": ".gd",
+        "fileName": "godot.svg"
+    },
+    {
+        "extension": ".gradle",
+        "fileName": "gradle.svg"
+    },
+    {
+        "extension": ".gr",
+        "fileName": "grain.svg"
+    },
+    {
+        "extension": ".graphcool",
+        "fileName": "graphcool.svg"
+    },
+    {
+        "extension": ".gql",
+        "fileName": "graphql.svg"
+    },
+    {
+        "extension": ".gridsome-config.js",
+        "fileName": "gridsome.svg"
+    },
+    {
+        "extension": ".groovy",
+        "fileName": "groovy.svg"
+    },
+    {
+        "extension": ".gruntfile.js",
+        "fileName": "grunt.svg"
+    },
+    {
+        "extension": ".gulpfile.js",
+        "fileName": "gulp.svg"
+    },
+    {
+        "extension": ".h",
+        "fileName": "h.svg"
+    },
+    {
+        "extension": ".hh",
+        "fileName": "hack.svg"
+    },
+    {
+        "extension": ".haml",
+        "fileName": "haml.svg"
+    },
+    {
+        "extension": ".hbs",
+        "fileName": "handlebars.svg"
+    },
+    {
+        "extension": ".hardhat.config.js",
+        "fileName": "hardhat.svg"
+    },
+    {
+        "extension": ".hs",
+        "fileName": "haskell.svg"
+    },
+    {
+        "extension": ".hx",
+        "fileName": "haxe.svg"
+    },
+    {
+        "extension": ".hcl",
+        "fileName": "hcl.svg"
+    },
+    {
+        "extension": ".hcl",
+        "fileName": "hcl_light.svg"
+    },
+    {
+        "extension": ".helm",
+        "fileName": "helm.svg"
+    },
+    {
+        "extension": ".heroku",
+        "fileName": "heroku.svg"
+    },
+    {
+        "extension": ".hex",
+        "fileName": "hex.svg"
+    },
+    {
+        "extension": ".hjson",
+        "fileName": "hjson.svg"
+    },
+    {
+        "extension": ".horusec-config.json",
+        "fileName": "horusec.svg"
+    },
+    {
+        "extension": ".hpp",
+        "fileName": "hpp.svg"
+    },
+    {
+        "extension": ".html",
+        "fileName": "html.svg"
+    },
+    {
+        "extension": ".http",
+        "fileName": "http.svg"
+    },
+    {
+        "extension": ".huff",
+        "fileName": "huff.svg"
+    },
+    {
+        "extension": ".huff",
+        "fileName": "huff_light.svg"
+    },
+    {
+        "extension": ".husky.config.js",
+        "fileName": "husky.svg"
+    },
+    {
+        "extension": ".i18n",
+        "fileName": "i18n.svg"
+    },
+    {
+        "extension": ".idr",
+        "fileName": "idris.svg"
+    },
+    {
+        "extension": ".ifanr",
+        "fileName": "ifanr-cloud.svg"
+    },
+    {
+        "extension": ".jpg",
+        "fileName": "image.svg"
+    },
+    {
+        "extension": ".imba",
+        "fileName": "imba.svg"
+    },
+    {
+        "extension": ".ionic.config.json",
+        "fileName": "ionic.svg"
+    },
+    {
+        "extension": ".istanbul.yml",
+        "fileName": "istanbul.svg"
+    },
+    {
+        "extension": ".jar",
+        "fileName": "jar.svg"
+    },
+    {
+        "extension": ".java",
+        "fileName": "java.svg"
+    },
+    {
+        "extension": ".class",
+        "fileName": "javaclass.svg"
+    },
+    {
+        "extension": ".js.map",
+        "fileName": "javascript-map.svg"
+    },
+    {
+        "extension": ".js",
+        "fileName": "javascript.svg"
+    },
+    {
+        "extension": ".jenkins",
+        "fileName": "jenkins.svg"
+    },
+    {
+        "extension": ".jest.config.js",
+        "fileName": "jest.svg"
+    },
+    {
+        "extension": ".jinja",
+        "fileName": "jinja.svg"
+    },
+    {
+        "extension": ".jinja",
+        "fileName": "jinja_light.svg"
+    },
+    {
+        "extension": ".jsconfig.json",
+        "fileName": "jsconfig.svg"
+    },
+    {
+        "extension": ".json",
+        "fileName": "json.svg"
+    },
+    {
+        "extension": ".jl",
+        "fileName": "julia.svg"
+    },
+    {
+        "extension": ".ipynb",
+        "fileName": "jupyter.svg"
+    },
+    {
+        "extension": ".karma.conf.js",
+        "fileName": "karma.svg"
+    },
+    {
+        "extension": ".key",
+        "fileName": "key.svg"
+    },
+    {
+        "extension": ".kv",
+        "fileName": "kivy.svg"
+    },
+    {
+        "extension": ".kl",
+        "fileName": "kl.svg"
+    },
+    {
+        "extension": ".knip",
+        "fileName": "knip.svg"
+    },
+    {
+        "extension": ".kt",
+        "fileName": "kotlin.svg"
+    },
+    {
+        "extension": ".kube",
+        "fileName": "kubernetes.svg"
+    },
+    {
+        "extension": ".kusto",
+        "fileName": "kusto.svg"
+    },
+    {
+        "extension": ".laravel",
+        "fileName": "laravel.svg"
+    },
+    {
+        "extension": ".lerna.json",
+        "fileName": "lerna.svg"
+    },
+    {
+        "extension": ".less",
+        "fileName": "less.svg"
+    },
+    {
+        "extension": ".a",
+        "fileName": "lib.svg"
+    },
+    {
+        "extension": ".lighthouserc.json",
+        "fileName": "lighthouse.svg"
+    },
+    {
+        "extension": ".ly",
+        "fileName": "lilypond.svg"
+    },
+    {
+        "extension": ".liquid",
+        "fileName": "liquid.svg"
+    },
+    {
+        "extension": ".lisp",
+        "fileName": "lisp.svg"
+    },
+    {
+        "extension": ".ls",
+        "fileName": "livescript.svg"
+    },
+    {
+        "extension": ".lock",
+        "fileName": "lock.svg"
+    },
+    {
+        "extension": ".log",
+        "fileName": "log.svg"
+    },
+    {
+        "extension": ".lol",
+        "fileName": "lolcode.svg"
+    },
+    {
+        "extension": ".lottie",
+        "fileName": "lottie.svg"
+    },
+    {
+        "extension": ".lua",
+        "fileName": "lua.svg"
+    },
+    {
+        "extension": ".makefile",
+        "fileName": "makefile.svg"
+    },
+    {
+        "extension": ".md",
+        "fileName": "markdown.svg"
+    },
+    {
+        "extension": ".marko",
+        "fileName": "markojs.svg"
+    },
+    {
+        "extension": ".mathematica",
+        "fileName": "mathematica.svg"
+    },
+    {
+        "extension": ".matlab",
+        "fileName": "matlab.svg"
+    },
+    {
+        "extension": ".maven",
+        "fileName": "maven.svg"
+    },
+    {
+        "extension": ".svelte.md",
+        "fileName": "mdsvex.svg"
+    },
+    {
+        "extension": ".mdx",
+        "fileName": "mdx.svg"
+    },
+    {
+        "extension": ".hg",
+        "fileName": "mercurial.svg"
+    },
+    {
+        "extension": ".merlin",
+        "fileName": "merlin.svg"
+    },
+    {
+        "extension": ".mmd",
+        "fileName": "mermaid.svg"
+    },
+    {
+        "extension": ".meson",
+        "fileName": "meson.svg"
+    },
+    {
+        "extension": ".mcfunction",
+        "fileName": "minecraft.svg"
+    },
+    {
+        "extension": ".mint",
+        "fileName": "mint.svg"
+    },
+    {
+        "extension": ".mjml",
+        "fileName": "mjml.svg"
+    },
+    {
+        "extension": ".mocharc.js","fileName": "mocha.svg"
+    },
+    {
+        "extension": ".modernizrrc",
+        "fileName": "modernizr.svg"
+    },
+    {
+        "extension": ".mojo",
+        "fileName": "mojo.svg"
+    },
+    {
+        "extension": ".moon",
+        "fileName": "moon.svg"
+    },
+    {
+        "extension": ".moonscript",
+        "fileName": "moonscript.svg"
+    },
+    {
+        "extension": ".mxml",
+        "fileName": "mxml.svg"
+    },
+    {
+        "extension": ".nano-staged.js",
+        "fileName": "nano-staged.svg"
+    },
+    {
+        "extension": ".nano-staged.js",
+        "fileName": "nano-staged_light.svg"
+    },
+    {
+        "extension": ".ndst",
+        "fileName": "ndst.svg"
+    },
+    {
+        "extension": ".controller.ts",
+        "fileName": "nest-controller.svg"
+    },
+    {
+        "extension": ".decorator.ts",
+        "fileName": "nest-decorator.svg"
+    },
+    {
+        "extension": ".filter.ts",
+        "fileName": "nest-filter.svg"
+    },
+    {
+        "extension": ".gateway.ts",
+        "fileName": "nest-gateway.svg"
+    },
+    {
+        "extension": ".guard.ts",
+        "fileName": "nest-guard.svg"
+    },
+    {
+        "extension": ".middleware.ts",
+        "fileName": "nest-middleware.svg"
+    },
+    {
+        "extension": ".module.ts",
+        "fileName": "nest-module.svg"
+    },
+    {
+        "extension": ".pipe.ts",
+        "fileName": "nest-pipe.svg"
+    },
+    {
+        "extension": ".resolver.ts",
+        "fileName": "nest-resolver.svg"
+    },
+    {
+        "extension": ".service.ts",
+        "fileName": "nest-service.svg"
+    },
+    {
+        "extension": ".nest",
+        "fileName": "nest.svg"
+    },
+    {
+        "extension": ".netlify.toml",
+        "fileName": "netlify.svg"
+    },
+    {
+        "extension": ".netlify.toml",
+        "fileName": "netlify_light.svg"
+    },
+    {
+        "extension": ".next.config.js",
+        "fileName": "next.svg"
+    },
+    {
+        "extension": ".next.config.js",
+        "fileName": "next_light.svg"
+    },
+    {
+        "extension": ".nginx",
+        "fileName": "nginx.svg"
+    },
+    {
+        "extension": ".actions.ts",
+        "fileName": "ngrx-actions.svg"
+    },
+    {
+        "extension": ".effects.ts",
+        "fileName": "ngrx-effects.svg"
+    },
+    {
+        "extension": ".entity.ts",
+        "fileName": "ngrx-entity.svg"
+    },
+    {
+        "extension": ".reducer.ts",
+        "fileName": "ngrx-reducer.svg"
+    },
+    {
+        "extension": ".selectors.ts",
+        "fileName": "ngrx-selectors.svg"
+    },
+    {
+        "extension": ".state.ts",
+        "fileName": "ngrx-state.svg"
+    },
+    {
+        "extension": ".nim",
+        "fileName": "nim.svg"
+    },
+    {
+        "extension": ".nix",
+        "fileName": "nix.svg"
+    },
+    {
+        "extension": ".node-version",
+        "fileName": "nodejs.svg"
+    },
+    {
+        "extension": ".nvmrc",
+        "fileName": "nodejs_alt.svg"
+    },
+    {
+        "extension": ".nodemon.json",
+        "fileName": "nodemon.svg"
+    },
+    {
+        "extension": ".npmignore",
+        "fileName": "npm.svg"
+    },
+    {
+        "extension": ".nuget",
+        "fileName": "nuget.svg"
+    },
+    {
+        "extension": ".nunjucks",
+        "fileName": "nunjucks.svg"
+    },
+    {
+        "extension": ".nuxt.config.js",
+        "fileName": "nuxt.svg"
+    },
+    {
+        "extension": ".nx.json",
+        "fileName": "nx.svg"
+    },
+    {
+        "extension": ".m",
+        "fileName": "objective-c.svg"
+    },
+    {
+        "extension": ".mm",
+        "fileName": "objective-cpp.svg"
+    },
+    {
+        "extension": ".ml",
+        "fileName": "ocaml.svg"
+    },
+    {
+        "extension": ".odin",
+        "fileName": "odin.svg"
+    },
+    {
+        "extension": ".opa",
+        "fileName": "opa.svg"
+    },
+    {
+        "extension": ".opam",
+        "fileName": "opam.svg"
+    },
+    {
+        "extension": ".openapi.json",
+        "fileName": "openapi.svg"
+    },
+    {
+        "extension": ".openapi.json",
+        "fileName": "openapi_light.svg"
+    },
+    {
+        "extension": ".otne",
+        "fileName": "otne.svg"
+    },
+    {
+        "extension": ".panda",
+        "fileName": "panda.svg"
+    },
+    {
+        "extension": ".pas",
+        "fileName": "pascal.svg"
+    },
+    {
+        "extension": ".pwn",
+        "fileName": "pawn.svg"
+    },
+    {
+        "extension": ".payload.json",
+        "fileName": "payload.svg"
+    },
+    {
+        "extension": ".payload.json",
+        "fileName": "payload_light.svg"
+    },
+    {
+        "extension": ".pdf",
+        "fileName": "pdf.svg"
+    },
+    {
+        "extension": ".pdm",
+        "fileName": "pdm.svg"
+    },
+    {
+        "extension": ".percy.yml",
+        "fileName": "percy.svg"
+    },
+    {
+        "extension": ".pl",
+        "fileName": "perl.svg"
+    },
+    {
+        "extension": ".php-cs-fixer.dist.php",
+        "fileName": "php-cs-fixer.svg"
+    },
+    {
+        "extension": ".php",
+        "fileName": "php.svg"
+    },
+    {
+        "extension": ".php",
+        "fileName": "php_elephant.svg"
+    },
+    {
+        "extension": ".php",
+        "fileName": "php_elephant_pink.svg"
+    },
+    {
+        "extension": ".phpunit.xml",
+        "fileName": "phpunit.svg"
+    },
+    {
+        "extension": ".pinejs",
+        "fileName": "pinejs.svg"
+    },
+    {
+        "extension": ".pipeline",
+        "fileName": "pipeline.svg"
+    },
+    {
+        "extension": ".pkl",
+        "fileName": "pkl.svg"
+    },
+    {
+        "extension": ".plastic",
+        "fileName": "plastic.svg"
+    },
+    {
+        "extension": ".playwright.config.js",
+        "fileName": "playwright.svg"
+    },
+    {
+        "extension": ".plopfile.js",
+        "fileName": "plop.svg"
+    },
+    {
+        "extension": ".pnpm-workspace.yaml",
+        "fileName": "pnpm.svg"
+    },
+    {
+        "extension": ".pnpm-workspace.yaml",
+        "fileName": "pnpm_light.svg"
+    },
+    {
+        "extension": ".poetry",
+        "fileName": "poetry.svg"
+    },
+    {
+        "extension": ".pcss",
+        "fileName": "postcss.svg"
+    },
+    {
+        "extension": ".posthtml",
+        "fileName": "posthtml.svg"
+    },
+    {
+        "extension":".pptx",
+        "fileName": "powerpoint.svg"
+    },
+    {
+        "extension": ".ps1",
+        "fileName": "powershell.svg"
+    },
+    {
+        "extension": ".prettierrc",
+        "fileName": "prettier.svg"
+    },
+    {
+        "extension": ".prisma",
+        "fileName": "prisma.svg"
+    },
+    {
+        "extension": ".pde",
+        "fileName": "processing.svg"
+    },
+    {
+        "extension": ".pl",
+        "fileName": "prolog.svg"
+    },
+    {
+        "extension": ".proto",
+        "fileName": "proto.svg"
+    },
+    {
+        "extension": ".protractor.conf.js",
+        "fileName": "protractor.svg"
+    },
+    {
+        "extension": ".pug",
+        "fileName": "pug.svg"
+    },
+    {
+        "extension": ".pp",
+        "fileName": "puppet.svg"
+    },
+    {
+        "extension": ".puppeteer.config.js",
+        "fileName": "puppeteer.svg"
+    },
+    {
+        "extension": ".purs",
+        "fileName": "purescript.svg"
+    },
+    {
+        "extension": ".pypirc",
+        "fileName": "python-misc.svg"
+    },
+    {
+        "extension": ".py",
+        "fileName": "python.svg"
+    },
+    { "extension": ".qs",
+        "fileName": "qsharp.svg"
+    },
+    {
+        "extension": ".quasar.conf.js",
+        "fileName": "quasar.svg"
+    },
+    {
+        "extension": ".quokka.js",
+        "fileName": "quokka.svg"
+    },
+    {
+        "extension": ".qwik",
+        "fileName": "qwik.svg"
+    },
+    {
+        "extension": ".r",
+        "fileName": "r.svg"
+    },
+    {
+        "extension": ".rkt",
+        "fileName": "racket.svg"
+    },
+    {
+        "extension": ".raml",
+        "fileName": "raml.svg"
+    },
+    {
+        "extension": ".cshtml",
+        "fileName": "razor.svg"
+    },
+    {
+        "extension": ".rc",
+        "fileName": "rc.svg"
+    },
+    {
+        "extension": ".jsx",
+        "fileName": "react.svg"
+    },
+    {
+        "extension": ".tsx",
+        "fileName": "react_ts.svg"
+    },
+    {
+        "extension": ".readme.md",
+        "fileName": "readme.svg"
+    },
+    {
+        "extension": ".re",
+        "fileName": "reason.svg"
+    },
+    {
+        "extension": ".red",
+        "fileName": "red.svg"
+    },
+    {
+        "extension": ".action.js",
+        "fileName": "redux-action.svg"
+    },
+    {
+        "extension": ".reducer.js",
+        "fileName": "redux-reducer.svg"
+    },
+    {
+        "extension": ".selector.js",
+        "fileName": "redux-selector.svg"
+    },
+    {
+        "extension": ".store.js",
+        "fileName": "redux-store.svg"
+    },
+    {
+        "extension": ".remix.js",
+        "fileName": "remix.svg"
+    },
+    {
+        "extension": ".remix.js",
+        "fileName": "remix_light.svg"
+    },
+    {
+        "extension": ".renovaterc",
+        "fileName": "renovate.svg"
+    },
+    {
+        "extension": ".replit",
+        "fileName": "replit.svg"
+    },
+    {
+        "extension": ".resi",
+        "fileName": "rescript-interface.svg"
+    },
+    {
+        "extension": ".res",
+        "fileName": "rescript.svg"
+    },
+    {
+        "extension": ".restql",
+        "fileName": "restql.svg"
+    },
+    {
+        "extension": ".riot",
+        "fileName": "riot.svg"
+    },
+    {
+        "extension": ".roadmap.md",
+        "fileName": "roadmap.svg"
+    },
+    {
+        "extension": ".rbxm",
+        "fileName": "roblox.svg"
+    },
+    {
+        "extension": ".robot",
+        "fileName": "robot.svg"
+    },
+    {
+        "extension": ".robots.txt",
+        "fileName": "robots.svg"
+    },
+    {
+        "extension": ".rollup.config.js",
+        "fileName": "rollup.svg"
+    },
+    {
+        "extension": ".rjson",
+        "fileName": "rome.svg"
+    },
+    {
+        "extension": ".routing.ts",
+        "fileName": "routing.svg"
+    },
+    {
+        "extension": ".rspec",
+        "fileName": "rspec.svg"
+    },
+    {
+        "extension": ".rubocop.yml",
+        "fileName": "rubocop.svg"
+    },
+    {
+        "extension": ".rubocop.yml",
+        "fileName": "rubocop_light.svg"
+    },
+    {
+        "extension": ".rb",
+        "fileName": "ruby.svg"
+    },
+    {
+        "extension": ".rs",
+        "fileName": "rust.svg"
+    },
+    {
+        "extension": ".salesforce",
+        "fileName": "salesforce.svg"
+    },
+    {
+        "extension": ".san",
+        "fileName": "san.svg"
+    },
+    {
+        "extension": ".sas",
+        "fileName": "sas.svg"
+    },
+    {
+        "extension": ".sass",
+        "fileName": "sass.svg"
+    },
+    {
+        "extension": ".sbt",
+        "fileName": "sbt.svg"
+    },
+    {
+        "extension": ".scala",
+        "fileName": "scala.svg"
+    },
+    {
+        "extension": ".scm",
+        "fileName": "scheme.svg"
+    },
+    {
+        "extension": ".search",
+        "fileName": "search.svg"
+    },
+    {
+        "extension": ".releaserc",
+        "fileName": "semantic-release.svg"
+    },
+    {
+        "extension": ".releaserc",
+        "fileName": "semantic-release_light.svg"
+    },
+    {
+        "extension": ".semgrep",
+        "fileName": "semgrep.svg"
+    },
+    {
+        "extension": ".sentryclirc",
+        "fileName": "sentry.svg"
+    },
+    {
+        "extension": ".sequelizerc",
+        "fileName": "sequelize.svg"
+    },
+    {
+        "extension": ".serverless.yml",
+        "fileName": "serverless.svg"
+    },
+    {
+        "extension": ".settings.json",
+        "fileName": "settings.svg"
+    },
+    {
+        "extension": ".shader",
+        "fileName": "shader.svg"
+    },
+    {
+        "extension": ".hlsl",
+        "fileName": "shaderlab.svg"
+    },
+    {
+        "extension": ".ss",
+        "fileName": "silverstripe.svg"
+    },
+    {
+        "extension": ".sy",
+        "fileName": "siyuan.svg"
+    },
+    {
+        "extension": ".sketch",
+        "fileName": "sketch.svg"
+    },
+    {
+        "extension": ".slim",
+        "fileName": "slim.svg"
+    },
+    {
+        "extension": ".slug",
+        "fileName": "slug.svg"
+    },
+    {
+        "extension": ".tpl",
+        "fileName": "smarty.svg"
+    },
+    {
+        "extension": ".sml",
+        "fileName": "sml.svg"
+    },
+    {
+        "extension": ".snowpack.config.js",
+        "fileName": "snowpack.svg"
+    },
+    {
+        "extension": ".snowpack.config.js",
+        "fileName": "snowpack_light.svg"
+    },
+    {
+        "extension": ".snyk",
+        "fileName": "snyk.svg"
+    },
+    {
+        "extension": ".sol",
+        "fileName": "solidity.svg"
+    },
+    {
+        "extension": ".sonarcloud.properties",
+        "fileName": "sonarcloud.svg"
+    },
+    {
+        "extension": ".spwn",
+        "fileName": "spwn.svg"
+    },
+    {
+        "extension": ".stan",
+        "fileName": "stan.svg"
+    },
+    {
+        "extension": ".steadybit.yml",
+        "fileName": "steadybit.svg"
+    },
+    {
+        "extension": ".stencil.config.ts",
+        "fileName": "stencil.svg"
+    },
+    {
+        "extension": ".stitches.config.js",
+        "fileName": "stitches.svg"
+    },
+    {
+        "extension": ".stitches.config.js",
+        "fileName": "stitches_light.svg"
+    },
+    {
+        "extension": ".stories.js",
+        "fileName": "storybook.svg"
+    },
+    {
+        "extension": ".stryker.conf.js",
+        "fileName": "stryker.svg"
+    },
+    {
+        "extension": ".st.css",
+        "fileName": "stylable.svg"
+    },
+    {
+        "extension": ".stylelintrc",
+        "fileName": "stylelint.svg"
+    },
+    {
+        "extension": ".stylelintrc",
+        "fileName": "stylelint_light.svg"
+    },
+    {
+        "extension": ".styl",
+        "fileName": "stylus.svg"
+    },
+    {
+        "extension": ".sublime-project",
+        "fileName": "sublime.svg"
+    },
+    {
+        "extension": ".supabase.json",
+        "fileName": "supabase.svg"
+    },
+    {
+        "extension": ".svelte",
+        "fileName": "svelte.svg"
+    },
+    {
+        "extension": ".svg",
+        "fileName": "svg.svg"
+    },
+    {
+        "extension": ".svgo.yml",
+        "fileName": "svgo.svg"
+    },
+    {
+        "extension": ".svgrrc",
+        "fileName": "svgr.svg"
+    },
+    {
+        "extension": ".swagger.json",
+        "fileName": "swagger.svg"
+    },
+    {
+        "extension": ".swcrc",
+        "fileName": "swc.svg"
+    },
+    {
+        "extension": ".swift",
+        "fileName": "swift.svg"
+    },
+    {
+        "extension": ".syncpackrc",
+        "fileName": "syncpack.svg"
+    },
+    {
+        "extension": ".table",
+        "fileName": "table.svg"
+    },
+    {
+        "extension": ".tailwind.config.js",
+        "fileName": "tailwindcss.svg"
+    },
+    {
+        "extension": ".taskfile.yaml",
+        "fileName": "taskfile.svg"
+    },
+    {
+        "extension": ".tauri.conf.json",
+        "fileName": "tauri.svg"
+    },
+    {
+        "extension": ".tcl",
+        "fileName": "tcl.svg"
+    },
+    {
+        "extension": ".tl",
+        "fileName": "teal.svg"
+    },
+    {
+        "extension": ".templ",
+        "fileName": "templ.svg"
+    },
+    {
+        "extension": ".template",
+        "fileName": "template.svg"
+    },
+    {
+        "extension": ".tf",
+        "fileName": "terraform.svg"
+    },
+    {
+        "extension": ".test.js",
+        "fileName": "test-js.svg"
+    },
+    {
+        "extension": ".test.jsx",
+        "fileName": "test-jsx.svg"
+    },
+    {
+        "extension": ".test.ts",
+        "fileName": "test-ts.svg"
+    },
+    {
+        "extension": ".tex",
+        "fileName": "tex.svg"
+    },
+    {
+        "extension": ".textlintrc",
+        "fileName": "textlint.svg"
+    },
+    {
+        "extension": ".tiltfile",
+        "fileName": "tilt.svg"
+    },
+    {
+        "extension": ".tldr",
+        "fileName": "tldraw.svg"
+    },
+    {
+        "extension": ".tldr",
+        "fileName": "tldraw_light.svg"
+    },
+    {
+        "extension": ".tobi",
+        "fileName": "tobi.svg"
+    },
+    {
+        "extension": ".tobimake",
+        "fileName": "tobimake.svg"
+    },
+    {
+        "extension": ".todo",
+        "fileName": "todo.svg"
+    },
+    {
+        "extension": ".travis.yml",
+        "fileName": "travis.svg"
+    },
+    {
+        "extension": ".tree",
+        "fileName": "tree.svg"
+    },
+    {
+        "extension": ".tsconfig.json",
+        "fileName": "tsconfig.svg"
+    },
+    {
+        "extension": ".tune",
+        "fileName": "tune.svg"
+    },
+    {
+        "extension": ".turbo.json",
+        "fileName": "turborepo.svg"
+    },
+    {
+        "extension": ".turbo.json",
+        "fileName": "turborepo_light.svg"
+    },
+    {
+        "extension": ".twig",
+        "fileName": "twig.svg"
+    },
+    {
+        "extension": ".twee",
+        "fileName": "twine.svg"
+    },
+    {
+        "extension": ".d.ts",
+        "fileName": "typescript-def.svg"
+    },
+    {
+        "extension": ".ts",
+        "fileName": "typescript.svg"
+    },
+    {
+        "extension": ".typ",
+        "fileName": "typst.svg"
+    },
+    {
+        "extension": ".uml",
+        "fileName": "uml.svg"
+    },
+    {
+        "extension": ".uml",
+        "fileName": "uml_light.svg"
+    },
+    {
+        "extension": ".unocss.config.ts",
+        "fileName": "unocss.svg"
+    },
+    {
+        "extension": ".url",
+        "fileName": "url.svg"
+    },
+    {
+        "extension": ".vagrantfile",
+        "fileName": "vagrant.svg"
+    },
+    {
+        "extension": ".vala",
+        "fileName": "vala.svg"
+    },
+    {
+        "extension": ".ved",
+        "fileName": "vedic.svg"
+    },
+    {
+        "extension": ".vercel.json",
+        "fileName": "vercel.svg"
+    },
+    {
+        "extension": ".vercel.json",
+        "fileName": "vercel_light.svg"
+    },
+    {
+        "extension": ".verdaccio-auth.json",
+        "fileName": "verdaccio.svg"
+    },
+    {
+        "extension": ".v",
+        "fileName": "verilog.svg"
+    },
+    {
+        "extension": ".vfl",
+        "fileName": "vfl.svg"
+    },
+    {
+        "extension": ".mp4",
+        "fileName": "video.svg"
+    },
+    {
+        "extension": ".vim",
+        "fileName": "vim.svg"
+    },
+    {
+        "extension": ".vm",
+        "fileName": "virtual.svg"
+    },
+    {
+        "extension": ".sln",
+        "fileName": "visualstudio.svg"
+    },
+    {
+        "extension": ".vite.config.js",
+        "fileName": "vite.svg"
+    },
+    {
+        "extension": ".vitest.config.js",
+        "fileName": "vitest.svg"
+    },
+    {
+        "extension": ".v",
+        "fileName": "vlang.svg"
+    },
+    {
+        "extension": ".code-workspace",
+        "fileName": "vscode.svg"
+    },
+    {
+        "extension": ".vue.config.js",
+        "fileName": "vue-config.svg"
+    },
+    {
+        "extension": ".vue",
+        "fileName": "vue.svg"
+    },
+    {
+        "extension": ".vuex-store.js",
+        "fileName": "vuex-store.svg"
+    },
+    {
+        "extension": ".wakatime-project",
+        "fileName": "wakatime.svg"
+    },
+    {
+        "extension": ".wakatime-project",
+        "fileName": "wakatime_light.svg"
+    },
+    {
+        "extension": ".wallaby.js",
+        "fileName": "wallaby.svg"
+    },
+    {
+        "extension": ".watchmanconfig",
+        "fileName": "watchman.svg"
+    },
+    {
+        "extension": ".wasm",
+        "fileName": "webassembly.svg"
+    },
+    {
+        "extension": ".hintrc",
+        "fileName": "webhint.svg"
+    },
+    {
+        "extension": ".webpack.config.js",
+        "fileName": "webpack.svg"
+    },
+    {
+        "extension": ".wpy",
+        "fileName": "wepy.svg"
+    },
+    {
+        "extension": ".werf.yaml",
+        "fileName": "werf.svg"},
+    {
+        "extension": ".windi.config.ts",
+        "fileName": "windicss.svg"
+    },
+    {
+        "extension": ".wl",
+        "fileName": "wolframlanguage.svg"
+    },
+    {
+        "extension": ".docx",
+        "fileName": "word.svg"
+    },
+    {
+        "extension": ".xaml",
+        "fileName": "xaml.svg"
+    },
+    {
+        "extension": ".xml",
+        "fileName": "xml.svg"
+    },
+    {
+        "extension": ".yaml",
+        "fileName": "yaml.svg"
+    },
+    {
+        "extension": ".yang",
+        "fileName": "yang.svg"
+    },
+    {
+        "extension": ".yarn.lock",
+        "fileName": "yarn.svg"
+    },
+    {
+        "extension": ".zig",
+        "fileName": "zig.svg"
+    },
+    {
+        "extension": ".zip",
+        "fileName": "zip.svg"
+    }
+]
