@@ -7,6 +7,7 @@ const os = require('os');
 const pty = require('node-pty');
 
 let ptyProcess
+let terminal
 
 const userDataPath = app.getPath('userData')
 
@@ -101,28 +102,26 @@ app.on('window-all-closed', () => {
   }
 })
 
-// In this file you can include the rest of your app"s specific main process
-// code. You can also put them in separate files and require them here.
-  ipcMain.on('ping', () => console.log('pong'))
+ipcMain.on('ping', () => console.log('pong'))
 
-  ipcMain.on('saveAppState', (event, AppState) => {
-    const filePath = path.join(userDataPath, 'AppState.json')
-    writeFileSync(filePath, JSON.stringify(AppState, null, 4))
-    console.log("Saved the AppState", filePath)
-  })
+ipcMain.on('saveAppState', (event, AppState) => {
+  const filePath = path.join(userDataPath, 'AppState.json')
+  writeFileSync(filePath, JSON.stringify(AppState, null, 4))
+  console.log("Saved the AppState", filePath)
+})
 
-  ipcMain.on('loadAppState', (event) => {
-    const filePath = path.join(userDataPath, 'AppState.json');
-    if (existsSync(filePath)) {
-        const appState = readFileSync(filePath, 'utf-8');
-        event.reply('app-state-loaded', JSON.parse(appState));
-    }
-    });
+ipcMain.on('loadAppState', (event) => {
+  const filePath = path.join(userDataPath, 'AppState.json');
+  if (existsSync(filePath)) {
+      const appState = readFileSync(filePath, 'utf-8');
+      event.reply('app-state-loaded', JSON.parse(appState));
+  }
+  });
 
-  function createTerminal() {
+function createTerminal() {
+  if (!terminal) {  // Only create a new terminal if one doesn't already exist
     const shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
-
-    const ptyProcess = pty.spawn(shell, [], {
+    terminal = pty.spawn(shell, [], {
       name: 'xterm-color',
       cols: 80,
       rows: 30,
@@ -130,14 +129,18 @@ app.on('window-all-closed', () => {
       env: process.env
     });
 
-    return ptyProcess;
-  }
-
-  ipcMain.on('terminal-to-backend', (event, data) => {
-    const terminal = createTerminal();
-    terminal.on('data', function (data) {
-      event.sender.send('terminal-from-backend', data);
+    terminal.on('data', (data) => {
+      // Send data back to the renderer process
+      BrowserWindow.getAllWindows().forEach((win) => {
+        win.webContents.send('terminal-from-backend', data);
+      });
     });
+  }
+  return terminal;
+}
 
-    terminal.write(data);
-  });
+
+ipcMain.on('terminal-to-backend', (event, data) => {
+  const terminalInstance = createTerminal();
+  terminalInstance.write(data);
+});

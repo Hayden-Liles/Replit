@@ -48,10 +48,12 @@ onMounted(() => {
         terminal.open(terminalElement.value);
 
         terminal.onData(data => {
+            console.log('sending', data)
             window.electron.sendTerminalData(data);
         });
 
         window.electron.onTerminalData((data) => {
+            console.log('recieving', data)
             terminal.write(data);
         });
     }
