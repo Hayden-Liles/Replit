@@ -3,6 +3,10 @@ import path, { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
 import { existsSync, readFileSync, writeFileSync } from 'fs'
+const os = require('os');
+const pty = require('node-pty');
+
+let ptyProcess
 
 const userDataPath = app.getPath('userData')
 
@@ -23,8 +27,31 @@ function createWindow() {
     }
   })
 
+  function initializePtyProcess() {
+    const shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
+    ptyProcess = pty.spawn(shell, [], {
+      name: 'xterm-color',
+      cols: 80,
+      rows: 30,
+      cwd: process.env.HOME,
+      env: process.env
+    });
+
+    if (!ptyProcess) {
+      console.error('Failed to initialize ptyProcess');
+      return;
+    }
+
+    ptyProcess.onData((data) => {
+      mainWindow.webContents.send('terminal-data', data);
+    })
+  }
+
+
+
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
+    initializePtyProcess()
   })
 
   mainWindow.webContents.setWindowOpenHandler((details) => {
@@ -92,3 +119,25 @@ app.on('window-all-closed', () => {
     }
     });
 
+  function createTerminal() {
+    const shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
+
+    const ptyProcess = pty.spawn(shell, [], {
+      name: 'xterm-color',
+      cols: 80,
+      rows: 30,
+      cwd: process.env.HOME,
+      env: process.env
+    });
+
+    return ptyProcess;
+  }
+
+  ipcMain.on('terminal-to-backend', (event, data) => {
+    const terminal = createTerminal();
+    terminal.on('data', function (data) {
+      event.sender.send('terminal-from-backend', data);
+    });
+
+    terminal.write(data);
+  });
