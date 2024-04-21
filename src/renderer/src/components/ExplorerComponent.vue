@@ -31,7 +31,7 @@ function getImageForFolder(folderName, isOpen) {
     console.log('folderName:: ', folderName)
     const folderType = folderTypes.find(ft => ft.folderName === folderName)
     console.log(folderType)
-    if (!folderType) return isOpen ? toImage('../assets/icons/folder-base-open.svg') : toImage('../assets/icons/folder-base.svg')
+    if (!folderType) return isOpen ? toImage('../assets/icons/folder-custom-open.svg') : toImage('../assets/icons/folder-custom.svg')
     return isOpen ? toImage(`../assets/icons/${folderType.open}`) : toImage(`../assets/icons/${folderType.closed}`)
 }
 
