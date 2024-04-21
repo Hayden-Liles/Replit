@@ -12,7 +12,6 @@
                 </div>
             </pane>
             <pane>
-
                 <splitpanes horizontal>
                     <pane size="70">
                         <EditorComponent/>

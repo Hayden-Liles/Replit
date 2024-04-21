@@ -1,6 +1,8 @@
 <template>
     <li class="explorerOption">
         <div class="d-flex folderinfo" @click.stop="$emit('toggle-folder', item)">
+            <img v-if="item.isDirectory" :src="item.isOpen ? chevronDown : chevronRight" alt="" class="icon min" fill="white">
+            <div v-else style="padding-left: 20px;"></div>
             <img class="icon min"
                 :src="item.isDirectory ? getImageForFolder(item.name, item.isOpen) : getImageForFile(item.name)" alt="">
             <p class="mx-2 min">{{ item.name }}</p>
@@ -16,6 +18,8 @@
 import fileTypes from '../data/filetypes.json'
 import folderTypes from '../data/foldertypes.json'
 import FileFolder from './FileFolder.vue'
+import chevronRight from '../assets/imgs/chevron-right.svg'
+import chevronDown from '../assets/imgs/chevron-down.svg'
 
 
 function toImage(route) {
@@ -25,7 +29,7 @@ function toImage(route) {
 function getImageForFile(fileName) {
     const extension = fileName.slice(fileName.lastIndexOf('.'))
     const fileType = fileTypes.find(ft => ft.extension === extension)
-    return fileType ? toImage(`../assets/icons/${fileType.fileName}`) : toImage('../assets/icons/base.svg')
+    return fileType ? toImage(`../assets/icons/${fileType.fileName}`) : toImage('../assets/icons/document.svg')
 }
 
 function getImageForFolder(folderName, isOpen) {
@@ -47,8 +51,8 @@ defineEmits(['toggle-folder'])
 }
 
 .icon {
-    height: 20px;
-    width: 21px;
+    height: 17px;
+    width: 17px;
 }
 
 li {
