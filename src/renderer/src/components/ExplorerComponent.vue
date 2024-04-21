@@ -1,60 +1,68 @@
 <template>
     <div class="explorer">
         <ul>
-            <li v-for="item in files" :key="item.name" @click="toggle(item)">
-                <span v-if="item.isDirectory">
-                    <img v-if="item.expanded" src="/path/to/minus-icon.svg" alt="Collapse">
-                    <img v-else src="/path/to/plus-icon.svg" alt="Expand">
-                </span>
-                <span v-else>
-                    <img src="/path/to/file-icon.svg" alt="File">
-                </span>
+            <li class="explorerOption" v-for="item in files" :key="item.name" @click="toggleFolder(item)">
+                <img class="icon" :src="item.type === 'file' ? getImageForFile(item.name) : getImageForFolder(item.name, item.isOpen)" alt="">
                 {{ item.name }}
-                <ul v-if="item.isDirectory && item.expanded">
-                    <explorer-item v-for="child in item.children" :key="child.name" :item="child" />
-                </ul>
             </li>
         </ul>
     </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import ExplorerItem from './ExplorerItem.vue'; // This will be a recursive component
+import { ref, onMounted } from 'vue'
+import fileTypes from '../data/filetypes.json'
+import folderTypes from '../data/foldertypes.json'
 
-const files = ref([]);
+const files = ref([])
+
+function toImage(route){
+    return new URL(route, import.meta.url)
+}
+
+function getImageForFile(fileName) {
+    console.log('hell')
+    const extension = fileName.slice(fileName.lastIndexOf('.'))
+    const fileType = fileTypes.find(ft => ft.extension === extension)
+    return fileType ? toImage(`../assets/icons/${fileType.fileName}`) : toImage('../assets/icons/base.svg')
+}
+
+function getImageForFolder(folderName, isOpen) {
+    console.log('folderName:: ', folderName)
+    const folderType = folderTypes.find(ft => ft.folderName === folderName)
+    console.log(folderType)
+    if (!folderType) return isOpen ? toImage('../assets/icons/folder-base-open.svg') : toImage('../assets/icons/folder-base.svg')
+    return isOpen ? toImage(`../assets/icons/${folderType.open}`) : toImage(`../assets/icons/${folderType.closed}`)
+}
+
+function toggleFolder(item) {
+    if (item.type === 'folder') {
+        item.isOpen = !item.isOpen
+    }
+}
 
 onMounted(() => {
-    window.electron.getFilesFromPath('C:/path/to/your/directory'); // Specify your path here
+    window.electron.getFilesFromPath('C:/Users/Hayden/OneDrive/Desktop/BCW Projects/asd/my-electron-vite-project')
     window.electron.onFilesReceived((receivedFiles) => {
+        console.log("Received files:", receivedFiles)
         files.value = receivedFiles.map(file => ({
             ...file,
-            expanded: false,
-            children: []
-        }));
-    });
-});
-
-const toggle = (item) => {
-    if (item.isDirectory) {
-        item.expanded = !item.expanded;
-        if (item.expanded && item.children.length === 0) {
-            window.electron.getFilesFromPath('C:/path/to/your/directory/' + item.name); // Adjust path as needed
-            window.electron.onFilesReceived((receivedFiles) => {
-                item.children = receivedFiles.map(file => ({
-                    ...file,
-                    expanded: false,
-                    children: []
-                }));
-            });
-        }
-    }
-};
+            type: file.isDirectory ? 'folder' : 'file',
+            isOpen: false
+        })).sort((a, b) => {
+            if (a.type === 'folder' && b.type === 'file') {
+                return -1
+            } else if (a.type === 'file' && b.type === 'folder') {
+                return 1
+            }
+            return a.name.localeCompare(b.name)
+        })
+    })
+})
 </script>
 
 <style scoped>
 .explorer {
-    background-color: #1e1e1e;
     color: #ccc;
     padding: 10px;
     height: 100%;
@@ -73,5 +81,14 @@ const toggle = (item) => {
 
 .explorer li:hover {
     background-color: #333;
+}
+
+.explorerOption{
+    font-size: 12px;
+}
+
+.icon{
+    height: 15px;
+    width: 15px;
 }
 </style>

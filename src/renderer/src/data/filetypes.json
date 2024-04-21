@@ -556,6 +556,10 @@
         "fileName": "git.svg"
     },
     {
+        "extension": ".gitignore",
+        "fileName": "git.svg"
+    },
+    {
         "extension": ".gitlab-ci.yml",
         "fileName": "gitlab.svg"
     },
@@ -769,6 +773,10 @@
     },
     {
         "extension": ".json",
+        "fileName": "json.svg"
+    },
+    {
+        "extension": ".json5",
         "fileName": "json.svg"
     },
     {

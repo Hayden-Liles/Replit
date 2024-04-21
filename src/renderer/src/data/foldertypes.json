@@ -617,7 +617,7 @@
     {
         "open": "folder-node-open.svg",
         "closed": "folder-node.svg",
-        "folderName": "node"
+        "folderName": "node_modules"
     },
     {
         "open": "folder-nuxt-open.svg",
@@ -957,7 +957,7 @@
     {
         "open": "folder-vscode-open.svg",
         "closed": "folder-vscode.svg",
-        "folderName": "vscode"
+        "folderName": ".vscode"
     },
     {
         "open": "folder-vue-directives-open.svg",
