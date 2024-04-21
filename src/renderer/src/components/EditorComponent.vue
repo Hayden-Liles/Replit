@@ -1,7 +1,5 @@
 <template>
-
     <div class="editor h-100 w-100" ref="editorElement"></div>
-
 </template>
 
 <script setup>

@@ -2,7 +2,7 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import path, { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
-import { existsSync, readFileSync, writeFileSync, readdir } from 'fs'
+import { existsSync, readFileSync, writeFileSync, readdir, readdirSync } from 'fs'
 const os = require('os');
 const pty = require('node-pty');
 
@@ -169,17 +169,34 @@ ipcMain.on('request-initial-data', () => {
   terminal.clear()
 });
 
-ipcMain.on('get-files-from-path', (event, dirPath) => {
-  readdir(dirPath, { withFileTypes: true }, (err, dirents) => {
-    if (err) {
-      console.error('Failed to read directory:', err);
-      event.reply('files-received', []); // Send empty array on error
-      return;
+function readDirectoryRecursively(dir) {
+  let results = [];
+  const dirents = readdirSync(dir, { withFileTypes: true });
+  for (const dirent of dirents) {
+    const res = path.resolve(dir, dirent.name);
+    if (dirent.isDirectory()) {
+      results.push({
+        name: dirent.name,
+        isDirectory: true,
+        children: readDirectoryRecursively(res)
+      });
+    } else {
+      results.push({
+        name: dirent.name,
+        isDirectory: false
+      });
     }
-    const files = dirents.map(dirent => ({
-      name: dirent.name,
-      isDirectory: dirent.isDirectory(),
-    }));
+  }
+  return results;
+}
+
+// IPC event handler
+ipcMain.on('get-files-from-path', async (event, dirPath) => {
+  try {
+    const files = readDirectoryRecursively(dirPath);
     event.reply('files-received', files);
-  });
+  } catch (err) {
+    console.error('Failed to read directory:', err);
+    event.reply('files-received', []);
+  }
 });
