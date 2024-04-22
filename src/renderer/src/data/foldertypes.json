@@ -337,7 +337,7 @@
     {
         "open": "folder-git-open.svg",
         "closed": "folder-git.svg",
-        "folderName": "git"
+        "folderName": ".git"
     },
     {
         "open": "folder-github-open.svg",
