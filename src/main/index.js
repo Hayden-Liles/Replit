@@ -28,31 +28,31 @@ function createWindow() {
     }
   })
 
-  function initializePtyProcess() {
-    const shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
-    ptyProcess = pty.spawn(shell, [], {
-      name: 'xterm-color',
-      cols: 80,
-      rows: 30,
-      cwd: process.env.HOME,
-      env: process.env
-    });
+  // function initializePtyProcess() {
+  //   const shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
+  //   ptyProcess = pty.spawn(shell, [], {
+  //     name: 'xterm-color',
+  //     cols: 80,
+  //     rows: 30,
+  //     cwd: process.env.HOME,
+  //     env: process.env
+  //   });
 
-    if (!ptyProcess) {
-      console.error('Failed to initialize ptyProcess');
-      return;
-    }
+  //   if (!ptyProcess) {
+  //     console.error('Failed to initialize ptyProcess');
+  //     return;
+  //   }
 
-    ptyProcess.onData((data) => {
-      mainWindow.webContents.send('terminal-data', data);
-    })
-  }
+  //   ptyProcess.onData((data) => {
+  //     mainWindow.webContents.send('terminal-data', data);
+  //   })
+  // }
 
 
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
-    initializePtyProcess()
+    // initializePtyProcess()
   })
 
   mainWindow.webContents.setWindowOpenHandler((details) => {
@@ -118,56 +118,54 @@ ipcMain.on('loadAppState', (event) => {
   }
   });
 
-function createTerminal() {
-  if (!terminal) {  // Only create a new terminal if one doesn't already exist
-    const shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
-    terminal = pty.spawn(shell, [], {
-      name: 'xterm-color',
-      cols: 80,
-      rows: 30,
-      cwd: process.env.HOME,
-      env: process.env
-    });
+// function createTerminal() {
+//   if (!terminal) {  // Only create a new terminal if one doesn't already exist
+//     const shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
+//     terminal = pty.spawn(shell, [], {
+//       name: 'xterm-color',
+//       cols: 80,
+//       rows: 30,
+//       cwd: process.env.HOME,
+//       env: process.env
+//     });
 
 
-    terminal.on('data', (data) => {
-      // Send data back to the renderer process
-      BrowserWindow.getAllWindows().forEach((win) => {
-        win.webContents.send('terminal-from-backend', data);
-      });
-    });
+//     terminal.on('data', (data) => {
+//       // Send data back to the renderer process
+//       BrowserWindow.getAllWindows().forEach((win) => {
+//         win.webContents.send('terminal-from-backend', data);
+//       });
+//     });
+//   }
+//   return terminal;
+// }
 
-    
-  }
-  return terminal;
-}
+// let commandBuffer = '';
 
-let commandBuffer = '';
+// ipcMain.on('terminal-to-backend', (event, data) => {
+//   console.log("DATA RECIEVED :: ", data)
+//   const terminalInstance = createTerminal();
 
-ipcMain.on('terminal-to-backend', (event, data) => {
-  console.log("DATA RECIEVED :: ", data)
-  const terminalInstance = createTerminal();
+//   if (data == '\r' && commandBuffer.trim() == 'clear'){
+//     terminalInstance.write(data);
+//     terminalInstance.clear()
+//     commandBuffer = ''
+//     console.log('clearing')
+//   } else if (data == '\r') {
+//     console.log(commandBuffer.trim())
+//     commandBuffer = ''
+//     terminalInstance.write(data);
+//   }
+//   else{
+//     commandBuffer += data
+//     terminalInstance.write(data);
+//   }
+// });
 
-  if (data == '\r' && commandBuffer.trim() == 'clear'){
-    terminalInstance.write(data);
-    terminalInstance.clear()
-    commandBuffer = ''
-    console.log('clearing')
-  } else if (data == '\r') {
-    console.log(commandBuffer.trim())
-    commandBuffer = ''
-    terminalInstance.write(data);
-  }
-  else{
-    commandBuffer += data
-    terminalInstance.write(data);
-  }
-});
-
-ipcMain.on('request-initial-data', () => {
-  const terminal = createTerminal();
-  terminal.clear()
-});
+// ipcMain.on('request-initial-data', () => {
+//   const terminal = createTerminal();
+//   terminal.clear()
+// });
 
 function readDirectoryRecursively(dir) {
   let results = [];

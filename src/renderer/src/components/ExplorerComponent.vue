@@ -16,9 +16,7 @@ const defaultPath = 'C:/Users/Hayden/OneDrive/Desktop/BCW Projects/asd/my-electr
 
 
 function toggleFolder(item) {
-    console.log('hell')
     item.isOpen = !item.isOpen;
-    console.log(item)
 }
 
 onMounted(() => {

@@ -31,17 +31,17 @@ onMounted(() => {
         terminal.value.loadAddon(fitAddon.value);
         terminal.value.open(terminalElement.value);
         fitAddon.value.fit();
-        window.electron.requestInitialData()
+        // window.electron.requestInitialData()
 
-        terminal.value.onData(data => {
-            // console.log('sending', data)
-            window.electron.sendTerminalData(data);
-        });
+        // terminal.value.onData(data => {
+        //     // console.log('sending', data)
+        //     window.electron.sendTerminalData(data);
+        // });
 
-        window.electron.onTerminalData((data) => {
-            // console.log('receiving', data)
-            terminal.value.write(data);
-        });
+        // window.electron.onTerminalData((data) => {
+        //     console.log(`receiving (${data})`)
+        //     terminal.value.write(data);
+        // });
     }
 
     const resizeObserver = new ResizeObserver(() => {
