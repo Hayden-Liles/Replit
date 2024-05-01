@@ -22,7 +22,13 @@ const terminalElement = ref(null)
 const fitAddon = ref(null)
 const terminal = ref(null)
 
-onMounted(() => {
+watchEffect(() => {
+    if (fitAddon.value && terminalElement.value) {
+        fitAddon.value.fit();
+    }
+});
+
+function initializeTerminal(){
     if (window.electron) {
         terminal.value = new Terminal({
             cursorBlink: true
@@ -31,17 +37,6 @@ onMounted(() => {
         terminal.value.loadAddon(fitAddon.value);
         terminal.value.open(terminalElement.value);
         fitAddon.value.fit();
-        // window.electron.requestInitialData()
-
-        // terminal.value.onData(data => {
-        //     // console.log('sending', data)
-        //     window.electron.sendTerminalData(data);
-        // });
-
-        // window.electron.onTerminalData((data) => {
-        //     console.log(`receiving (${data})`)
-        //     terminal.value.write(data);
-        // });
     }
 
     const resizeObserver = new ResizeObserver(() => {
@@ -50,29 +45,33 @@ onMounted(() => {
         }
     });
     resizeObserver.observe(terminalElement.value);
+}
 
-    onUnmounted(() => {
-        resizeObserver.disconnect();
+function handleListeners(){
+    terminal.value.onData(async data => {
+        window.electron.sendTerminalData(data)
     });
+
+    if (window.electron) {
+        terminal.value.onResize(({ cols, rows }) => {
+            window.electron.onTerminalResize(cols, rows)
+        });
+
+        window.electron.onTerminalData((data) => {
+            terminal.value.write(data)
+        })
+    }
+}
+
+onMounted(() => {
+    initializeTerminal()
+    handleListeners()
 });
 
-watchEffect(() => {
-    if (fitAddon.value && terminalElement.value) {
-        fitAddon.value.fit();
-    }
+onUnmounted(() => {
+    resizeObserver.disconnect();
 });
 
-window.addEventListener('resize', () => {
-    if (fitAddon.value) {
-        fitAddon.value.fit();
-    }
-});
-
-window.addEventListener('resize', () => {
-    if (fitAddon.value) {
-        fitAddon.value.fit();
-    }
-});
 </script>
 
 

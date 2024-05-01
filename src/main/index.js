@@ -2,18 +2,15 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import path, { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
-import { existsSync, readFileSync, writeFileSync, readdir, readdirSync } from 'fs'
+import { existsSync, readFileSync, writeFileSync, readdirSync } from 'fs'
 const os = require('os');
 const pty = require('node-pty');
 
-let ptyProcess
-let terminal
-
 const userDataPath = app.getPath('userData')
+let mainWindow
 
 function createWindow() {
-  // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 900,
     minWidth:500,
     height: 670,
@@ -28,31 +25,9 @@ function createWindow() {
     }
   })
 
-  // function initializePtyProcess() {
-  //   const shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
-  //   ptyProcess = pty.spawn(shell, [], {
-  //     name: 'xterm-color',
-  //     cols: 80,
-  //     rows: 30,
-  //     cwd: process.env.HOME,
-  //     env: process.env
-  //   });
-
-  //   if (!ptyProcess) {
-  //     console.error('Failed to initialize ptyProcess');
-  //     return;
-  //   }
-
-  //   ptyProcess.onData((data) => {
-  //     mainWindow.webContents.send('terminal-data', data);
-  //   })
-  // }
-
-
-
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
-    // initializePtyProcess()
+    setupPtyListeners()
   })
 
   mainWindow.webContents.setWindowOpenHandler((details) => {
@@ -118,55 +93,6 @@ ipcMain.on('loadAppState', (event) => {
   }
   });
 
-// function createTerminal() {
-//   if (!terminal) {  // Only create a new terminal if one doesn't already exist
-//     const shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
-//     terminal = pty.spawn(shell, [], {
-//       name: 'xterm-color',
-//       cols: 80,
-//       rows: 30,
-//       cwd: process.env.HOME,
-//       env: process.env
-//     });
-
-
-//     terminal.on('data', (data) => {
-//       // Send data back to the renderer process
-//       BrowserWindow.getAllWindows().forEach((win) => {
-//         win.webContents.send('terminal-from-backend', data);
-//       });
-//     });
-//   }
-//   return terminal;
-// }
-
-// let commandBuffer = '';
-
-// ipcMain.on('terminal-to-backend', (event, data) => {
-//   console.log("DATA RECIEVED :: ", data)
-//   const terminalInstance = createTerminal();
-
-//   if (data == '\r' && commandBuffer.trim() == 'clear'){
-//     terminalInstance.write(data);
-//     terminalInstance.clear()
-//     commandBuffer = ''
-//     console.log('clearing')
-//   } else if (data == '\r') {
-//     console.log(commandBuffer.trim())
-//     commandBuffer = ''
-//     terminalInstance.write(data);
-//   }
-//   else{
-//     commandBuffer += data
-//     terminalInstance.write(data);
-//   }
-// });
-
-// ipcMain.on('request-initial-data', () => {
-//   const terminal = createTerminal();
-//   terminal.clear()
-// });
-
 function readDirectoryRecursively(dir) {
   let results = [];
   const dirents = readdirSync(dir, { withFileTypes: true });
@@ -198,3 +124,30 @@ ipcMain.on('get-files-from-path', async (event, dirPath) => {
     event.reply('files-received', []);
   }
 });
+
+
+
+let ptyProcess
+const ptyShell = os.platform() === 'win32' ? 'powershell.exe' : 'bash'
+
+ptyProcess = pty.spawn(ptyShell, [], {
+  name: 'xterm-color',
+  cols: 80,
+  rows: 30,
+  cwd: process.env.HOME,
+  env: process.env
+})
+
+ipcMain.on('terminal-resized', (event, cols, rows) => {
+  ptyProcess.resize(cols, rows)
+})
+
+ipcMain.handle('handle-terminal-data', (e, data) => {
+  ptyProcess.write(data);
+});
+
+function setupPtyListeners(){
+  ptyProcess.onData((data) => {
+    mainWindow.webContents.send('terminal-data', data);
+  })
+}

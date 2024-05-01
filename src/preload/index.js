@@ -8,9 +8,9 @@ const combinedAPI = {
   onAppStateLoaded: (callback) => ipcRenderer.on('app-state-loaded', (event, appState) => callback(appState)),
   getFilesFromPath: (path) => ipcRenderer.send('get-files-from-path', path),
   onFilesReceived: (callback) => ipcRenderer.on('files-received', (event, files) => callback(files)),
-  // sendTerminalData: (data) => ipcRenderer.send('terminal-to-backend', data),
-  // onTerminalData: (callback) => ipcRenderer.on('terminal-from-backend', (event, data) => callback(data)),
-  // requestInitialData: () => ipcRenderer.send('request-initial-data'),
+  onTerminalResize: (cols, rows) => ipcRenderer.send('terminal-resized', cols, rows),
+  sendTerminalData: (data) => ipcRenderer.invoke('handle-terminal-data', data),
+  onTerminalData: (callback) => ipcRenderer.on('terminal-data', (event, data) => callback(data))
 }
 
 if (process.contextIsolated) {
