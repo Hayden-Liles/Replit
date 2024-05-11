@@ -10,7 +10,7 @@ const combinedAPI = {
   onFilesReceived: (callback) => ipcRenderer.on('files-received', (event, files) => callback(files)),
   onTerminalResize: (cols, rows) => ipcRenderer.send('terminal-resized', cols, rows),
   sendTerminalData: (data) => ipcRenderer.invoke('handle-terminal-data', data),
-  onTerminalData: (callback) => ipcRenderer.on('terminal-data', (event, data) => callback(data))
+  onTerminalData: (callback) => ipcRenderer.on('terminal-data', (event, data) => callback(data)),
 }
 
 if (process.contextIsolated) {

@@ -12,6 +12,7 @@ import { ref, onMounted } from 'vue'
 import FileFolder from './FileFolder.vue';
 
 const files = ref([])
+
 const defaultPath = 'C:/Users/Hayden/OneDrive/Desktop/BCW Projects/asd/my-electron-vite-project'
 
 

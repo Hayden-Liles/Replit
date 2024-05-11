@@ -13,14 +13,17 @@ export default defineConfig({
   },
   renderer: {
     resolve: {
-      alias: {
-        '@renderer': resolve('src/renderer/src')
-      }
+      preserveSymlinks: true,
+      // alias: {
+      //   '@renderer': resolve('src/renderer/src')
+      // }
     },
     plugins: [
       vue(),
       vitePluginMonacoEditor({
-        // options
+        customDistPath( root, buildOutDir, base){
+          return root + '../../out/renderer'
+        }
       })
     ]
   }
